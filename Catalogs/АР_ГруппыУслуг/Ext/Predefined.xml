@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="0dface4a-391d-47e3-acb7-a3f85865d1fc">
+		<Name>АдминистрированиеОхрана</Name>
+		<Code>000000015</Code>
+		<Description>Администрирование/охрана</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4e57d0cd-b1e0-4d5b-a102-05624a633dd6">
+		<Name>Аренда</Name>
+		<Code>000000002</Code>
+		<Description>Аренда</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d2f95fd6-def9-4f57-b2c7-bcfac3a19a8c">
+		<Name>БезГруппы</Name>
+		<Code>000000001</Code>
+		<Description>Без группы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="04213d09-a117-4fc5-a4c4-8e2e5d7e3b2a">
+		<Name>Возмещаемые</Name>
+		<Code>000000017</Code>
+		<Description>Возмещаемые</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8a984055-ebae-41d6-a45a-1d83ecc86ba6">
+		<Name>ДополнительныеУслуги</Name>
+		<Code>000000004</Code>
+		<Description>Дополнительные услуги</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="031de485-e291-41a0-924c-c3b2f20345d8">
+		<Name>ИнформационныеУслуги</Name>
+		<Code>000000020</Code>
+		<Description>Информационные услуги</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3b01cd88-08db-4571-b8e5-7b7bfb512f86">
+		<Name>Клининг</Name>
+		<Code>000000005</Code>
+		<Description>Клининг</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="93036f26-c098-437d-8f6e-54c201ff0016">
+		<Name>КомплексноеОбслуживание</Name>
+		<Code>000000016</Code>
+		<Description>Комплексное обслуживание</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="749d3c11-7a30-4e3c-b40a-3037b081b43b">
+		<Name>ОбеспечительныйПлатеж</Name>
+		<Code>000000003</Code>
+		<Description>Обеспечительный платеж</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="19aa030e-8695-4aa8-8291-6e76529bfa08">
+		<Name>ПеременнаяАП</Name>
+		<Code>000000014</Code>
+		<Description>Переменная АП</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0c356b6f-d47d-4925-a491-f33171e3ed39">
+		<Name>ПостояннаяАП</Name>
+		<Code>000000013</Code>
+		<Description>Постоянная АП</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c35d842e-9c02-414f-833c-aec3aeaf3825">
+		<Name>Реклама</Name>
+		<Code>000000010</Code>
+		<Description>Реклама</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="da28b0c1-c95d-4f0b-a888-64313366913f">
+		<Name>Управление</Name>
+		<Code>000000018</Code>
+		<Description>Управление</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="acd328ca-dc71-4ef5-a726-305cb112b3f4">
+		<Name>Эксплуатация</Name>
+		<Code>000000012</Code>
+		<Description>Эксплуатация</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

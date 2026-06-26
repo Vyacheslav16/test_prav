@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="3aa6f0be-fd4b-4b7d-8583-7a7db8e51088">
+		<Name>АНГ</Name>
+		<Code>000000017</Code>
+		<Description>Ангар</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="08924f66-63be-4bcf-933f-de4d4d8b2653">
+		<Name>БКС</Name>
+		<Code>000000008</Code>
+		<Description>Боксы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="38c8ef24-2c8c-48e0-beac-f4237f114c90">
+		<Name>ВОУ</Name>
+		<Code>000000015</Code>
+		<Description>Водомерный узел</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bac538a7-bddd-44d9-a138-c6cde5747ec9">
+		<Name>ГРЖ</Name>
+		<Code>000000007</Code>
+		<Description>Гараж</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="03e80f4a-b72c-4728-9dd2-16ece4ebff93">
+		<Name>ГСТ</Name>
+		<Code>000000004</Code>
+		<Description>Гостиничное</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7ae88fdb-ee8c-4fa7-989b-7b46d6601a12">
+		<Name>ЗПС</Name>
+		<Code>000000016</Code>
+		<Description>Заправочная станция</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="88b36f34-cde6-4f5e-ac55-4dd80e1f6b28">
+		<Name>КОТ</Name>
+		<Code>000000014</Code>
+		<Description>Котельная</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="eec10704-af0a-49de-adbf-26d9d21e675c">
+		<Name>МСК</Name>
+		<Code>000000009</Code>
+		<Description>Механизированный склад</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="afa5e8ee-b34b-4d4f-bab7-1442b4d73277">
+		<Name>МГФ</Name>
+		<Code>000000001</Code>
+		<Description>Многофункциональное</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1887b7db-6e15-443b-86b3-f4800acf2e3f">
+		<Name>НАВ</Name>
+		<Code>000000018</Code>
+		<Description>Навес</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b0e15ddc-4146-4b67-92a8-1f4311591d58">
+		<Name>НАС</Name>
+		<Code>000000013</Code>
+		<Description>Насосная</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="628e9410-da84-4561-a596-0abb9db788ff">
+		<Name>ОФС</Name>
+		<Code>000000002</Code>
+		<Description>Офисное</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a8c01be2-9850-4ff6-b9a8-e4c2f859dff7">
+		<Name>ПРК</Name>
+		<Code>000000006</Code>
+		<Description>Парковка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c3cc8831-a0bb-4518-b652-df49730748d9">
+		<Name>ПКС</Name>
+		<Code>000000019</Code>
+		<Description>Подкрановая площадка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ca1e7b40-39bc-4c93-8641-f110e778433b">
+		<Name>ПКР</Name>
+		<Code>000000011</Code>
+		<Description>Покрасочная</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="684286dc-3386-43f9-aba5-d08b39e7f15b">
+		<Name>СВЛ</Name>
+		<Code>000000010</Code>
+		<Description>Сварочная лаборатория</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="735f0118-8262-461c-a1aa-1830f9069bb3">
+		<Name>СКЛ</Name>
+		<Code>000000005</Code>
+		<Description>Складское</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bf4c17b7-aa90-4567-989f-7808686d028a">
+		<Name>ТРГ</Name>
+		<Code>000000003</Code>
+		<Description>Торговое</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="28f0aa78-272f-45b0-aef0-5bfa5ba7af8a">
+		<Name>ТРП</Name>
+		<Code>000000012</Code>
+		<Description>Трансформаторная подстанция</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

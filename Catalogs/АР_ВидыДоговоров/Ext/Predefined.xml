@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="ecacd35c-a369-4ea8-8083-3fbf9420af9e">
+		<Name>АгентскийДоговор</Name>
+		<Code>000000003</Code>
+		<Description>АГЕНТСКИЙ ДОГОВОР</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b6f47030-3afe-4c7a-8fa1-5bb5adcc4ee6">
+		<Name>Администрирование</Name>
+		<Code>000000004</Code>
+		<Description>АДМИНИСТРИРОВАНИЕ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="87088b86-f118-4ccf-9fd9-08f68f07758d">
+		<Name>Аренда</Name>
+		<Code>000000006</Code>
+		<Description>АРЕНДА</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="932d38bf-5dab-4fb9-8e51-7241700838c0">
+		<Name>АрендаОфис</Name>
+		<Code>000000007</Code>
+		<Description>АРЕНДА Офис</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="893fda3e-76f3-4077-ba96-aa222d55da8c">
+		<Name>АрендаТорговый</Name>
+		<Code>000000008</Code>
+		<Description>АРЕНДА Торговый</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1254f46e-edb7-4028-a6ec-a3afddea5ae9">
+		<Name>ГостиничноеУправление</Name>
+		<Code>000000005</Code>
+		<Description>Гостиничное управление</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cef71a6a-0fea-4f18-94bc-3fc7e7d16273">
+		<Name>КомплекснаяЭксплуатация</Name>
+		<Code>000000002</Code>
+		<Description>КОМПЛЕКСНАЯ ЭКСПЛУАТАЦИЯ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e0dde4dd-7846-4f29-935a-67c157f45811">
+		<Name>КомплексноеУправление</Name>
+		<Code>000000001</Code>
+		<Description>КОМПЛЕКСНОЕ УПРАВЛЕНИЕ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9f492a34-f481-4ec2-bf0a-5de4204b6071">
+		<Name>Субаренда</Name>
+		<Code>000000009</Code>
+		<Description>СУБАРЕНДА</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

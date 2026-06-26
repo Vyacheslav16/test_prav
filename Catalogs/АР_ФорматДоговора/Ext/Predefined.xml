@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="3c3a88d0-68a6-4a33-b8a7-8cbdff7ff2b7">
+		<Name>_0_50</Name>
+		<Code>000000002</Code>
+		<Description>0-50</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1b742923-b60b-4e9d-8455-8b2144e47887">
+		<Name>_100_150</Name>
+		<Code>000000004</Code>
+		<Description>100-150</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="381da8b1-3a52-4355-936b-8263d6da9540">
+		<Name>_150_200</Name>
+		<Code>000000005</Code>
+		<Description>150-200</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="557e5b51-79be-4b18-8d28-47d24942abf9">
+		<Name>_200_250</Name>
+		<Code>000000006</Code>
+		<Description>200-250</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="63fbdfd0-bf6d-4483-9191-aa34fd4d9465">
+		<Name>_250_350</Name>
+		<Code>000000007</Code>
+		<Description>250-350</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b7d2ec07-48d4-452f-9aaa-5f0f7508cf0e">
+		<Name>_350_500</Name>
+		<Code>000000008</Code>
+		<Description>350-500</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="73632d1e-9f0f-45a8-b4aa-a85338441668">
+		<Name>_50_100</Name>
+		<Code>000000003</Code>
+		<Description>50-100</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b0f6ce07-d73d-4826-919d-30b31acf815f">
+		<Name>_500_1000</Name>
+		<Code>000000009</Code>
+		<Description>500-1000</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="af556072-b91b-45f6-b377-c3c5567dc3b3">
+		<Name>Якорь</Name>
+		<Code>000000001</Code>
+		<Description>Якорь</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

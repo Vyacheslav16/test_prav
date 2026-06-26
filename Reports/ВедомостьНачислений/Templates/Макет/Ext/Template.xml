@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РасходОснащения</dataPath>
+			<field>РасходОснащения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расход оснащения</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФИО</dataPath>
+			<field>ФИО</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ФИО</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерПИБ</dataPath>
+			<field>НомерПИБ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер ПИБ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеустойкаГаранта</dataPath>
+			<field>НеустойкаГаранта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Неустойка гаранта</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерДоговора</dataPath>
+			<field>НомерДоговора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер договора</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаДоговора</dataPath>
+			<field>ДатаДоговора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата договора</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПолученныйДоход</dataPath>
+			<field>ПолученныйДоход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полученный доход</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерПомещения</dataPath>
+			<field>НомерПомещения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер помещения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Доля</dataPath>
+			<field>Доля</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доля</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВознаграждениеУК</dataPath>
+			<field>ВознаграждениеУК</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вознаграждение УК</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КВыплате</dataPath>
+			<field>КВыплате</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>К выплате</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаАренднойСтавки</dataPath>
+			<field>СуммаАренднойСтавки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма арендной ставки</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоходРасходПринципалаБезКорректировки</dataPath>
+			<field>ДоходРасходПринципалаБезКорректировки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доход расход принципала без корректировки</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Площадь</dataPath>
+			<field>Площадь</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=1</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПередачи</dataPath>
+			<field>ДатаПередачи</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy; ДП='нет ДП'</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗДА</dataPath>
+			<field>ЗДА</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЗДА</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Расходы</dataPath>
+			<field>Расходы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расходы</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоговорИнвестораГарантированныйдоход</dataPath>
+			<field>ДоговорИнвестораГарантированныйдоход</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоговорИнвестораПрограммаДоходности</dataPath>
+			<field>ДоговорИнвестораПрограммаДоходности</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СсылкаДоговорКонтрагента</dataPath>
+			<field>СсылкаДоговорКонтрагента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка договор контрагента</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоляПомещения</dataPath>
+			<field>ДоляПомещения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КомиссионноеВознаграждение</dataPath>
+			<field>КомиссионноеВознаграждение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтоимостьЗавтраков</dataPath>
+			<field>СтоимостьЗавтраков</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТекущийРемонт</dataPath>
+			<field>ТекущийРемонт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаДохода</dataPath>
+			<field>СуммаДохода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаКРаспределению</dataPath>
+			<field>СуммаКРаспределению</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПлощадьКотла</dataPath>
+			<field>ПлощадьКотла</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	АР17_Д_ОтчетИнвестора.ДоговорИнвестора.Контрагент КАК ФИО,
+	АР17_Д_ОтчетИнвестора.Помещение.ПомещениеНомерБТИ КАК НомерПИБ,
+	АР17_Д_ОтчетИнвестора.Помещение КАК НомерПомещения,
+	АР17_Д_ОтчетИнвестора.ДоговорИнвестора.ДоговорКонтрагента.Номер КАК НомерДоговора,
+	АР17_Д_ОтчетИнвестора.ДоговорИнвестора.ДоговорКонтрагента.Дата КАК ДатаДоговора,
+	АР17_Д_ОтчетИнвестора.ДоляПомещения * ЕСТЬNULL(АР17_Д_ОтчетИнвестора.Выручка, 0) КАК ПолученныйДоход,
+	АР17_Д_ОтчетИнвестора.ДоляПомещения * ЕСТЬNULL(АР17_Д_ОтчетИнвестора.РасходыСумма, 0) КАК Расходы,
+	АР17_Д_ОтчетИнвестора.ДоляПомещения * ЕСТЬNULL(АР17_Д_ОтчетИнвестора.РасходыУслугиУК, 0) КАК ВознаграждениеУК,
+	АР17_Д_ОтчетИнвестора.ЧестныйДоход КАК ДоходРасходПринципалаБезКорректировки,
+	ЕСТЬNULL(АР17_Д_ОтчетИнвестора.ДоговорИнвестора.Гарантированныйдоход, 0) - (АР17_Д_ОтчетИнвестора.ЧестныйДоход - АР17_Д_ОтчетИнвестора.ЧестныйРасход - АР17_Д_ОтчетИнвестора.ЧестнаяКУ) КАК НеустойкаГаранта,
+	ЕСТЬNULL(АР17_Д_ОтчетИнвестора.Оснащение, 0) КАК РасходОснащения,
+	АР17_Д_ОтчетИнвестора.ЧистыйДоход - ЕСТЬNULL(АР17_Д_ОтчетИнвестора.Оснащение, 0) КАК КВыплате,
+	АР17_Д_ОтчетИнвестора.ДоляПомещения КАК Доля,
+	АР17_Д_ОтчетИнвестора.СреднийТариф КАК СуммаАренднойСтавки,
+	КОНЕЦПЕРИОДА(АР17_Д_ОтчетИнвестора.Период, МЕСЯЦ) КАК Период,
+	АР17_Д_ОтчетИнвестора.ДоговорИнвестора.ДоговорКонтрагента КАК СсылкаДоговорКонтрагента,
+	АР17_Д_ОтчетИнвестора.ДоговорИнвестора КАК ЗДА,
+	АР17_Д_ОтчетИнвестора.ДоляПомещения КАК ДоляПомещения,
+	АР17_Д_ОтчетИнвестора.ДоговорИнвестора.Гарантированныйдоход КАК ДоговорИнвестораГарантированныйдоход,
+	АР17_Д_ОтчетИнвестора.ДоговорИнвестора.ПрограммаДоходности КАК ДоговорИнвестораПрограммаДоходности,
+	АР17_ЗаключениеАгентскогоДоговораОбъектыАренды.ДатаПередачи КАК ДатаПередачи,
+	АР17_ЗаключениеАгентскогоДоговораОбъектыАренды.Площадь КАК Площадь,
+	АР17_Д_ОтчетИнвестора.Ссылка КАК Ссылка,
+	АР17_Д_ОтчетИнвестора.КомиссионноеВознаграждение КАК КомиссионноеВознаграждение,
+	АР17_Д_ОтчетИнвестора.СтоимостьЗавтраков КАК СтоимостьЗавтраков,
+	АР17_Д_ОтчетИнвестора.ТекущийРемонт КАК ТекущийРемонт,
+	АР17_Д_ОтчетИнвестора.СуммаДохода КАК СуммаДохода,
+	АР17_Д_ОтчетИнвестора.СуммаКРаспределению КАК СуммаКРаспределению,
+	АР17_Д_ОтчетИнвестора.ПлощадьКотла КАК ПлощадьКотла
+ИЗ
+	Документ.АР17_Д_ОтчетИнвестора КАК АР17_Д_ОтчетИнвестора
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.АР17_ЗаключениеАгентскогоДоговора.ОбъектыАренды КАК АР17_ЗаключениеАгентскогоДоговораОбъектыАренды
+		ПО АР17_Д_ОтчетИнвестора.ДоговорИнвестора = АР17_ЗаключениеАгентскогоДоговораОбъектыАренды.Ссылка
+ГДЕ
+	АР17_Д_ОтчетИнвестора.Проведен = ИСТИНА
+	И АР17_Д_ОтчетИнвестора.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+{ГДЕ
+	(АР17_Д_ОтчетИнвестора.ИК = &amp;ИК
+			ИЛИ АР17_Д_ОтчетИнвестора.ИК ЕСТЬ NULL)}
+
+СГРУППИРОВАТЬ ПО
+	АР17_Д_ОтчетИнвестора.ДоговорИнвестора.Контрагент,
+	АР17_Д_ОтчетИнвестора.Помещение.ПомещениеНомерБТИ,
+	АР17_Д_ОтчетИнвестора.Помещение,
+	АР17_Д_ОтчетИнвестора.ДоговорИнвестора.ДоговорКонтрагента.Номер,
+	АР17_Д_ОтчетИнвестора.ДоговорИнвестора.ДоговорКонтрагента.Дата,
+	АР17_Д_ОтчетИнвестора.СреднийТариф,
+	КОНЕЦПЕРИОДА(АР17_Д_ОтчетИнвестора.Период, МЕСЯЦ),
+	АР17_Д_ОтчетИнвестора.ЧистыйДоход - ЕСТЬNULL(АР17_Д_ОтчетИнвестора.Оснащение, 0),
+	ЕСТЬNULL(АР17_Д_ОтчетИнвестора.Оснащение, 0),
+	АР17_Д_ОтчетИнвестора.ДоляПомещения,
+	АР17_Д_ОтчетИнвестора.ДоговорИнвестора.ДоговорКонтрагента,
+	АР17_Д_ОтчетИнвестора.ДоговорИнвестора,
+	АР17_Д_ОтчетИнвестора.ЧестныйДоход,
+	ЕСТЬNULL(АР17_Д_ОтчетИнвестора.ДоговорИнвестора.Гарантированныйдоход, 0) - (АР17_Д_ОтчетИнвестора.ЧестныйДоход - АР17_Д_ОтчетИнвестора.ЧестныйРасход - АР17_Д_ОтчетИнвестора.ЧестнаяКУ),
+	АР17_ЗаключениеАгентскогоДоговораОбъектыАренды.ДатаПередачи,
+	АР17_ЗаключениеАгентскогоДоговораОбъектыАренды.Площадь,
+	АР17_Д_ОтчетИнвестора.ДоговорИнвестора.Гарантированныйдоход,
+	АР17_Д_ОтчетИнвестора.ДоговорИнвестора.ПрограммаДоходности,
+	АР17_Д_ОтчетИнвестора.Ссылка,
+	АР17_Д_ОтчетИнвестора.ДоляПомещения * ЕСТЬNULL(АР17_Д_ОтчетИнвестора.Выручка, 0),
+	АР17_Д_ОтчетИнвестора.ДоляПомещения * ЕСТЬNULL(АР17_Д_ОтчетИнвестора.РасходыСумма, 0),
+	АР17_Д_ОтчетИнвестора.КомиссионноеВознаграждение,
+	АР17_Д_ОтчетИнвестора.СтоимостьЗавтраков,
+	АР17_Д_ОтчетИнвестора.ТекущийРемонт,
+	АР17_Д_ОтчетИнвестора.СуммаДохода,
+	АР17_Д_ОтчетИнвестора.СуммаКРаспределению,
+	АР17_Д_ОтчетИнвестора.ПлощадьКотла,
+	АР17_Д_ОтчетИнвестора.ДоляПомещения * ЕСТЬNULL(АР17_Д_ОтчетИнвестора.РасходыУслугиУК, 0),
+	АР17_Д_ОтчетИнвестора.ДоляПомещения</query>
+	</dataSet>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;СтандартныйПериод.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;СтандартныйПериод.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>ИК</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ИК</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.АР_ОбъектыАренды</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>СтандартныйПериод</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Стандартный период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отчет ведомость по начислениям</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ФИО</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерПИБ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерПомещения</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер помещения</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Площадь</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерДоговора</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаДоговора</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПередачи</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПолученныйДоход</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДоходЗаОтчетныйПериод</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Расходы</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТекущийРемонт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтоимостьЗавтраков</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КВыплате</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаАренднойСтавки</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ИК</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>7ba26823-2306-41a3-8466-92d6591beb1e</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>СтандартныйПериод</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>86099dc4-68a1-4ed3-8a12-a8933554040e</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">НомерПомещения</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:userSettingID>d90e47b1-60a3-45dc-be08-d9d551169aba</dcsset:userSettingID>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="АгентскийДоговор" id="7">
+			<DataPath>Объект.АгентскийДоговор</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="АгентскийДоговорКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="АгентскийДоговорРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">АгентскийДоговорПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="Группа2" id="53">
+			<Group>HorizontalIfPossible</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="54"/>
+			<ChildItems>
+				<InputField name="Договор" id="50">
+					<DataPath>Объект.Договор</DataPath>
+					<ContextMenu name="ДоговорКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="52"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Помещение" id="10">
+			<DataPath>Объект.Помещение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="ПомещениеКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПомещениеРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Сумма" id="13">
+			<DataPath>Объект.Сумма</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="СуммаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СуммаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<UsualGroup name="ПогашениеЗадолженности" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Погашение задолженности</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Погашение задолженности</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>WeakSeparation</Representation>
+			<ExtendedTooltip name="ПогашениеЗадолженностиРасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="46">
+					<Group>HorizontalIfPossible</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="47"/>
+					<ChildItems>
+						<InputField name="ДатаНачала" id="16">
+							<DataPath>Объект.ДатаНачала</DataPath>
+							<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="ДатаОкончания" id="19">
+							<DataPath>Объект.ДатаОкончания</DataPath>
+							<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="21"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="ГрафикПогашения" id="24">
+					<RowSelectionMode>Cell</RowSelectionMode>
+					<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ГрафикПогашения</DataPath>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ГрафикПогашенияКонтекстноеМеню" id="25"/>
+					<AutoCommandBar name="ГрафикПогашенияКоманднаяПанель" id="26">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ГрафикПогашенияЗаполнтиь" id="48">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ЗаполнитьГрафикПогашения</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Заполнить</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ГрафикПогашенияЗаполнтиьРасширеннаяПодсказка" id="49"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ГрафикПогашенияРасширеннаяПодсказка" id="27"/>
+					<SearchStringAddition name="ГрафикПогашенияСтрокаПоиска" id="28">
+						<AdditionSource>
+							<Item>ГрафикПогашения</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ГрафикПогашенияСтрокаПоискаКонтекстноеМеню" id="29"/>
+						<ExtendedTooltip name="ГрафикПогашенияСтрокаПоискаРасширеннаяПодсказка" id="30"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ГрафикПогашенияСостояниеПросмотра" id="31">
+						<AdditionSource>
+							<Item>ГрафикПогашения</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ГрафикПогашенияСостояниеПросмотраКонтекстноеМеню" id="32"/>
+						<ExtendedTooltip name="ГрафикПогашенияСостояниеПросмотраРасширеннаяПодсказка" id="33"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ГрафикПогашенияУправлениеПоиском" id="34">
+						<AdditionSource>
+							<Item>ГрафикПогашения</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ГрафикПогашенияУправлениеПоискомКонтекстноеМеню" id="35"/>
+						<ExtendedTooltip name="ГрафикПогашенияУправлениеПоискомРасширеннаяПодсказка" id="36"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ГрафикПогашенияНомерСтроки" id="37">
+							<DataPath>Объект.ГрафикПогашения.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ГрафикПогашенияНомерСтрокиКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ГрафикПогашенияНомерСтрокиРасширеннаяПодсказка" id="39"/>
+						</LabelField>
+						<InputField name="ГрафикПогашенияДата" id="40">
+							<DataPath>Объект.ГрафикПогашения.Дата</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ГрафикПогашенияДатаКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ГрафикПогашенияДатаРасширеннаяПодсказка" id="42"/>
+						</InputField>
+						<InputField name="ГрафикПогашенияСумма" id="43">
+							<DataPath>Объект.ГрафикПогашения.Сумма</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ГрафикПогашенияСуммаКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ГрафикПогашенияСуммаРасширеннаяПодсказка" id="45"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПР_ДоговорОтделки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьГрафикПогашения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить график погашения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить график погашения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьГрафикПогашения</Action>
+		</Command>
+		<Command name="СоздатьДоговорБух" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать договор бух</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать договор бух</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДоговорБух</Action>
+		</Command>
+	</Commands>
+</Form>

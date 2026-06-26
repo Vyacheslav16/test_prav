@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="37">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ИК" id="34">
+			<DataPath>Объект.ИК</DataPath>
+			<ContextMenu name="ИККонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ИКРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<Table name="ВводОстатков" id="7">
+			<Representation>List</Representation>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ВводОстатков</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ВводОстатковКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="ВводОстатковКоманднаяПанель" id="9">
+				<ChildItems>
+					<Button name="ВводОстатковЗаполнитьДоговорыПоИК" id="39">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьДоговорыПоИК</CommandName>
+						<ExtendedTooltip name="ВводОстатковЗаполнитьДоговорыПоИКРасширеннаяПодсказка" id="40"/>
+					</Button>
+					<Button name="ВводОстатковОбновитьОстаткиПоДаннымУчета" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОбновитьОстаткиПоДаннымУчета</CommandName>
+						<ExtendedTooltip name="ВводОстатковОбновитьОстаткиПоДаннымУчетаРасширеннаяПодсказка" id="33"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ВводОстатковРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="ВводОстатковСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>ВводОстатков</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВводОстатковСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ВводОстатковСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВводОстатковСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>ВводОстатков</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВводОстатковСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ВводОстатковСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВводОстатковУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>ВводОстатков</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВводОстатковУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ВводОстатковУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ВводОстатковНомерСтроки" id="20">
+					<DataPath>Объект.ВводОстатков.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ВводОстатковНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ВводОстатковНомерСтрокиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<InputField name="ВводОстатковДоговорАренды" id="23">
+					<DataPath>Объект.ВводОстатков.ДоговорАренды</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ВводОстатковДоговорАрендыКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ВводОстатковДоговорАрендыРасширеннаяПодсказка" id="25"/>
+					<Events>
+						<Event name="OnChange">ВводОстатковДоговорАрендыПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ВводОстатковКонтрагент" id="41">
+					<DataPath>Объект.ВводОстатков.Контрагент</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ВводОстатковКонтрагентКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ВводОстатковКонтрагентРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ВводОстатковДокументРасчета" id="50">
+					<DataPath>Объект.ВводОстатков.ДокументРасчетов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ВводОстатковДокументРасчетаКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ВводОстатковДокументРасчетаРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="ВводОстатковГруппаУслуг" id="47">
+					<DataPath>Объект.ВводОстатков.ГруппаУслуг</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ВводОстатковГруппаУслугКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ВводОстатковГруппаУслугРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ВводОстатковНоменклатура" id="44">
+					<DataPath>Объект.ВводОстатков.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ВводОстатковНоменклатураКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ВводОстатковНоменклатураРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ВводОстатковФактическийОстаток" id="26">
+					<DataPath>Объект.ВводОстатков.ФактическийОстаток</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ВводОстатковФактическийОстатокКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ВводОстатковФактическийОстатокРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ВводОстатковОстатокПоДаннымУчета" id="29">
+					<DataPath>Объект.ВводОстатков.ОстатокПоДаннымУчета</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ВводОстатковОстатокПоДаннымУчетаКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ВводОстатковОстатокПоДаннымУчетаРасширеннаяПодсказка" id="31"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.АР17_КорректировкаОстатковРасчетовПоДоговорам</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Объект.ВводОстатков">
+					<Column name="ОстатокПоДаннымУчета" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Остаток по данным учета</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>15</v8:Digits>
+								<v8:FractionDigits>2</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьОстаткиПоДаннымУчета" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить остатки по данным учета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить остатки по данным учета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьОстаткиПоДаннымУчета</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаполнитьДоговорыПоИК" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить договоры по ИК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить договоры по ИК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьДоговорыПоИК</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

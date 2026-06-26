@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="05cdb5a3-25d3-4b24-8d3e-9a17a42dd568">
+		<Name>ВознаграждениеДопИспользованиеЗдания</Name>
+		<Code>000000003</Code>
+		<Description>Вознаграждение за дополнительное использование здания</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="db077365-0e38-41df-87a1-29a8ba3797fe">
+		<Name>ВознаграждениеУправлениеАренда</Name>
+		<Code>000000002</Code>
+		<Description>Вознаграждение за управление арендой</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c1d29549-43f8-4adc-b54d-fa1f45e398fc">
+		<Name>ВознаграждениеУправлениеБрокеридж</Name>
+		<Code>000000005</Code>
+		<Description>Вознаграждение за управление брокериджем</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fe70f241-75ae-44a0-9564-e9c081d642d6">
+		<Name>ВознаграждениеУправлениеЗданием</Name>
+		<Code>000000001</Code>
+		<Description>Вознаграждение за управление зданием</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="66cffe4e-b19f-4b9f-8c86-1fe9466f90e7">
+		<Name>ВознаграждениеУправлениеПродажа</Name>
+		<Code>000000004</Code>
+		<Description>Вознаграждение за управление продажей</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

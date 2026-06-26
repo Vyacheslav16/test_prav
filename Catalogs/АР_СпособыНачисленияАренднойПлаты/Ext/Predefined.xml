@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="c3dff53d-f000-4400-b417-fcb47e7483c8">
+		<Name>В_руб_за_м2_год</Name>
+		<Code>000000008</Code>
+		<Description>В руб. за м2/год</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6cad5290-f8dc-4e8d-99ac-4d66c4a491d0">
+		<Name>Директивный</Name>
+		<Code>000000001</Code>
+		<Description>Директивный</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="38ce12dc-11a6-4b00-8bc5-1c63dbcc02b1">
+		<Name>КоличестваДнейАренды</Name>
+		<Code>000000002</Code>
+		<Description>Количества дней аренды</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9e880443-9838-46ad-ada8-988fd48dfd28">
+		<Name>КоличестваКалендарныхДней</Name>
+		<Code>000000004</Code>
+		<Description>Количества календарных дней</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="732c2dd8-700a-443a-932a-1bf502f49082">
+		<Name>КоличестваМесяцевКонтракта</Name>
+		<Code>000000003</Code>
+		<Description>Количества месяцев контракта</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b352a0dd-b71f-4b1d-9ef4-89ac667054e2">
+		<Name>СтоимостьЗаКварталСчетЗаКварталАктЗаКвартал</Name>
+		<Code>000000007</Code>
+		<Description>Стоимость за квартал. Счет-квартал. Акт-квартал</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9aeceb69-b128-4bf2-bdbf-fc5a49efdbaa">
+		<Name>СтоимостьЗаМесяцСчетЗаКварталАктЗаКвартал</Name>
+		<Code>000000006</Code>
+		<Description>Стоимость за месяц. Счет-квартал. Акт-квартал</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="25d45be3-2a39-4d3d-8b28-d9cd8a5755a5">
+		<Name>СтоимостьЗаМесяцСчетЗаКварталАктЗаМесяц</Name>
+		<Code>000000005</Code>
+		<Description>Стоимость за месяц.Счет-квартал. Акт-месяц</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

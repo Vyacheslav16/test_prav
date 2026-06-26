@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="1046c182-0258-4f34-ba3c-5aac7c03cf3a">
+		<Name>ДоступУАрендатора</Name>
+		<Code>000000005</Code>
+		<Description>Доступ у арендатора</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0af3ce8e-3f7a-4afd-9007-9d8f7612b44f">
+		<Name>ПодПереговорами</Name>
+		<Code>000000003</Code>
+		<Description>Под переговорами</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d7280702-9a2f-49c7-9f1e-947004b87f4b">
+		<Name>Ремонтируем</Name>
+		<Code>000000004</Code>
+		<Description>Ремонтируем</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ff512984-32a5-46d4-9894-60b621c7e7f7">
+		<Name>Свободен</Name>
+		<Code>000000001</Code>
+		<Description>Свободен</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="829a0ba8-76f4-458f-91e4-11d53de91e2e">
+		<Name>СданоВАренду</Name>
+		<Code>000000002</Code>
+		<Description>Сдано в аренду</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

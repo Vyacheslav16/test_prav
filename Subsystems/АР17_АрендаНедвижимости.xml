@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Subsystem uuid="973cb9d8-65ad-4685-8ae9-8e15c7445c35">
+		<Properties>
+			<Name>АР17_АрендаНедвижимости</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аренда недвижимости</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>0</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.АР_ОтчетыПоНедвижимости</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.АР_ЧтениеДанныхБухгалтерииАренды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.АР_ДобавлениеИзменениеДанныхБухгалтерииАренды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.АР_ЧтениеДанныхАренды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.АР_ДобавлениеИзменениеДанныхАренды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.АР_Руководитель</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АР17_КорректировкаОстатковРасчетовПоДоговорам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Ар_УстановкаПлощади</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.АР_ШаблоныАгентскихДоговоров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_ФинансовыеПоказатели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_ОтчетОЗанятостиСводный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_ВедомостьПереданныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_КарточкаДоговора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_КарточкаКонтрагента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_КомплектДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_КонтрольДоговоровСИстекающимСрокомДействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_ОперативнаяЗадолженностьПоПериодам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_ОСВПоДоговорам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_ОтсутствующиеДокументы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_ОтчетАгентаФинансовыеПоказатели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_ОтчетПоНачислениям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_РеестрДоговоров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_РеестрСФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_РеестрДебеторка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_ФинансовыеПаказатели2017</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_Д_НачисленоОплачено</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_Д_Шахматка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_Д_Выезды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_Д_ОтчетПоДебеторке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР17_РеестрПереданныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР_ЗанятостьПлощадей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АР_РеестрОбъектовАренды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьНачислений</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>УправлениеОбъектами</Subsystem>
+			<Subsystem>УправлениеДоговорами</Subsystem>
+			<Subsystem>УправлениеВзаиморасчетами</Subsystem>
+			<Subsystem>УправлениеЭксплуатацией</Subsystem>
+			<Subsystem>УправлениеЗемельнымиУчастками</Subsystem>
+			<Subsystem>УправлениеОтелями</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

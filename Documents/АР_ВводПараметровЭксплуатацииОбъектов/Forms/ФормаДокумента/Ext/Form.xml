@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаКолонкаЛево" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа колонка лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа колонка лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКолонкаЛевоРасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНомерДата" id="32">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер/дата</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>номер и дата</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНомерДатаРасширеннаяПодсказка" id="45"/>
+							<ChildItems>
+								<InputField name="Номер" id="33">
+									<DataPath>Объект.Number</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="НомерКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="46"/>
+								</InputField>
+								<InputField name="Дата" id="35">
+									<DataPath>Объект.Date</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>от</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="47"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Организация" id="5">
+							<DataPath>Объект.Организация</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="48"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКолонкаПраво" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа колонка право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа колонка право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКолонкаПравоРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияПустойРеквизит" id="40">
+							<ContextMenu name="ДекорацияПустойРеквизитКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ДекорацияПустойРеквизитРасширеннаяПодсказка" id="50"/>
+						</LabelDecoration>
+						<InputField name="Ответственный" id="7">
+							<DataPath>Объект.Ответственный</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="51"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПараметрыЭкплуатации" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры экплуатации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметры экплуатации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>WeakSeparation</Representation>
+			<ExtendedTooltip name="ГруппаПараметрыЭкплуатацииРасширеннаяПодсказка" id="52"/>
+			<ChildItems>
+				<Table name="ПараметрыЭксплуатации" id="9">
+					<Representation>List</Representation>
+					<RowSelectionMode>Cell</RowSelectionMode>
+					<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.ПараметрыЭксплуатации</DataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ПараметрыЭксплуатацииКонтекстноеМеню" id="10"/>
+					<AutoCommandBar name="ПараметрыЭксплуатацииКоманднаяПанель" id="11"/>
+					<ExtendedTooltip name="ПараметрыЭксплуатацииРасширеннаяПодсказка" id="53"/>
+					<SearchStringAddition name="ПараметрыЭксплуатацииСтрокаПоиска" id="54">
+						<AdditionSource>
+							<Item>ПараметрыЭксплуатации</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПараметрыЭксплуатацииСтрокаПоискаКонтекстноеМеню" id="55"/>
+						<ExtendedTooltip name="ПараметрыЭксплуатацииСтрокаПоискаРасширеннаяПодсказка" id="56"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПараметрыЭксплуатацииСостояниеПросмотра" id="57">
+						<AdditionSource>
+							<Item>ПараметрыЭксплуатации</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПараметрыЭксплуатацииСостояниеПросмотраКонтекстноеМеню" id="58"/>
+						<ExtendedTooltip name="ПараметрыЭксплуатацииСостояниеПросмотраРасширеннаяПодсказка" id="59"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПараметрыЭксплуатацииУправлениеПоиском" id="60">
+						<AdditionSource>
+							<Item>ПараметрыЭксплуатации</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПараметрыЭксплуатацииУправлениеПоискомКонтекстноеМеню" id="61"/>
+						<ExtendedTooltip name="ПараметрыЭксплуатацииУправлениеПоискомРасширеннаяПодсказка" id="62"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ПараметрыЭксплуатацииНомерСтроки" id="12">
+							<DataPath>Объект.ПараметрыЭксплуатации.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ПараметрыЭксплуатацииНомерСтрокиКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ПараметрыЭксплуатацииНомерСтрокиРасширеннаяПодсказка" id="63"/>
+						</LabelField>
+						<InputField name="ПараметрыЭксплуатацииОбъектАренды" id="14">
+							<DataPath>Объект.ПараметрыЭксплуатации.ОбъектАренды</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ПараметрыЭксплуатацииОбъектАрендыКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ПараметрыЭксплуатацииОбъектАрендыРасширеннаяПодсказка" id="64"/>
+						</InputField>
+						<InputField name="ПараметрыЭксплуатацииЭлементОбъекта" id="16">
+							<DataPath>Объект.ПараметрыЭксплуатации.ЭлементОбъекта</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ПараметрыЭксплуатацииЭлементОбъектаКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ПараметрыЭксплуатацииЭлементОбъектаРасширеннаяПодсказка" id="65"/>
+						</InputField>
+						<InputField name="ПараметрыЭксплуатацииКомплексРабот" id="18">
+							<DataPath>Объект.ПараметрыЭксплуатации.КомплексРабот</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ПараметрыЭксплуатацииКомплексРаботКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ПараметрыЭксплуатацииКомплексРаботРасширеннаяПодсказка" id="66"/>
+						</InputField>
+						<InputField name="ПараметрыЭксплуатацииСпецификация" id="20">
+							<DataPath>Объект.ПараметрыЭксплуатации.Спецификация</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ПараметрыЭксплуатацииСпецификацияКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ПараметрыЭксплуатацииСпецификацияРасширеннаяПодсказка" id="67"/>
+						</InputField>
+						<InputField name="ПараметрыЭксплуатацииТехнологическаяКарта" id="22">
+							<DataPath>Объект.ПараметрыЭксплуатации.ТехнологическаяКарта</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ПараметрыЭксплуатацииТехнологическаяКартаКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ПараметрыЭксплуатацииТехнологическаяКартаРасширеннаяПодсказка" id="68"/>
+						</InputField>
+						<InputField name="ПараметрыЭксплуатацииТипОбслуживания" id="24">
+							<DataPath>Объект.ПараметрыЭксплуатации.ТипОбслуживания</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ПараметрыЭксплуатацииТипОбслуживанияКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ПараметрыЭксплуатацииТипОбслуживанияРасширеннаяПодсказка" id="69"/>
+						</InputField>
+						<InputField name="ПараметрыЭксплуатацииГрафикОбслуживания" id="26">
+							<DataPath>Объект.ПараметрыЭксплуатации.ГрафикОбслуживания</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ПараметрыЭксплуатацииГрафикОбслуживанияКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ПараметрыЭксплуатацииГрафикОбслуживанияРасширеннаяПодсказка" id="70"/>
+						</InputField>
+						<InputField name="ПараметрыЭксплуатацииПоказательВыработки" id="28">
+							<DataPath>Объект.ПараметрыЭксплуатации.ПоказательВыработки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ПараметрыЭксплуатацииПоказательВыработкиКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ПараметрыЭксплуатацииПоказательВыработкиРасширеннаяПодсказка" id="71"/>
+						</InputField>
+						<InputField name="ПараметрыЭксплуатацииПороговоеЗначениеВыработки" id="30">
+							<DataPath>Объект.ПараметрыЭксплуатации.ПороговоеЗначениеВыработки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ПараметрыЭксплуатацииПороговоеЗначениеВыработкиКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ПараметрыЭксплуатацииПороговоеЗначениеВыработкиРасширеннаяПодсказка" id="72"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.АР_ВводПараметровЭксплуатацииОбъектов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

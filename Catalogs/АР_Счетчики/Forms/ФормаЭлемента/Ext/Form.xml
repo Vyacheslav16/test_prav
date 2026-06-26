@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="НаименованиеКод" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НаименованиеКодРасширеннаяПодсказка" id="37"/>
+			<ChildItems>
+				<InputField name="Наименование" id="3">
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ChoiceListButton>true</ChoiceListButton>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="15"/>
+					<Events>
+						<Event name="StartListChoice">НаименованиеНачалоВыбораИзСписка</Event>
+					</Events>
+				</InputField>
+				<InputField name="Код" id="38">
+					<ContextMenu name="КодКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Родитель" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
+			<ContextMenu name="РодительКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="17"/>
+		</InputField>
+		<InputField name="МаркаСчетчика" id="7">
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="МаркаСчетчикаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="МаркаСчетчикаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="НомерСчетчика" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер счетчика</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="НомерСчетчикаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерСчетчикаРасширеннаяПодсказка" id="16"/>
+		</InputField>
+		<InputField name="ВидСчетчика" id="21">
+			<ContextMenu name="ВидСчетчикаКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ВидСчетчикаРасширеннаяПодсказка" id="23"/>
+			<Events>
+				<Event name="OnChange">ВидСчетчикаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ИК" id="41">
+			<ContextMenu name="ИККонтекстноеМеню" id="42"/>
+			<ExtendedTooltip name="ИКРасширеннаяПодсказка" id="43"/>
+		</InputField>
+		<InputField name="Помещение" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Потребление по помещению</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПомещениеКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="ПомещениеРасширеннаяПодсказка" id="26"/>
+		</InputField>
+		<InputField name="Услуга" id="30">
+			<Visible>false</Visible>
+			<ContextMenu name="УслугаКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="УслугаРасширеннаяПодсказка" id="32"/>
+		</InputField>
+		<InputField name="НазваниеРесурса" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ресурс</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НазваниеРесурсаКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="НазваниеРесурсаРасширеннаяПодсказка" id="46"/>
+		</InputField>
+		<InputField name="КоэффициентСчетчика" id="47">
+			<ContextMenu name="КоэффициентСчетчикаКонтекстноеМеню" id="48"/>
+			<ExtendedTooltip name="КоэффициентСчетчикаРасширеннаяПодсказка" id="49"/>
+		</InputField>
+		<InputField name="ДоговорКонтрагента" id="27">
+			<ContextMenu name="ДоговорКонтрагентаКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="ДоговорКонтрагентаРасширеннаяПодсказка" id="29"/>
+		</InputField>
+		<InputField name="ДатаНачалаЭкслуатации" id="33">
+			<ContextMenu name="ДатаНачалаЭкслуатацииКонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="ДатаНачалаЭкслуатацииРасширеннаяПодсказка" id="35"/>
+		</InputField>
+		<InputField name="Комментарий" id="11">
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="20"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.АР_Счетчики</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

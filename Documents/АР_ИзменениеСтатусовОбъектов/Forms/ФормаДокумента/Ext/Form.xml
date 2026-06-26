@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="Дата" id="3">
+					<DataPath>Объект.Date</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>от</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<InputField name="Организация" id="11">
+					<DataPath>Объект.Организация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="36"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОбъектыАренды" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты аренды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа объекты аренды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>WeakSeparation</Representation>
+			<ExtendedTooltip name="ГруппаОбъектыАрендыРасширеннаяПодсказка" id="37"/>
+			<ChildItems>
+				<Table name="ОбъектыАренды" id="13">
+					<Representation>List</Representation>
+					<RowSelectionMode>Cell</RowSelectionMode>
+					<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.ОбъектыАренды</DataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ОбъектыАрендыКонтекстноеМеню" id="14"/>
+					<AutoCommandBar name="ОбъектыАрендыКоманднаяПанель" id="15"/>
+					<ExtendedTooltip name="ОбъектыАрендыРасширеннаяПодсказка" id="38"/>
+					<SearchStringAddition name="ОбъектыАрендыСтрокаПоиска" id="39">
+						<AdditionSource>
+							<Item>ОбъектыАренды</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОбъектыАрендыСтрокаПоискаКонтекстноеМеню" id="40"/>
+						<ExtendedTooltip name="ОбъектыАрендыСтрокаПоискаРасширеннаяПодсказка" id="41"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ОбъектыАрендыСостояниеПросмотра" id="42">
+						<AdditionSource>
+							<Item>ОбъектыАренды</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОбъектыАрендыСостояниеПросмотраКонтекстноеМеню" id="43"/>
+						<ExtendedTooltip name="ОбъектыАрендыСостояниеПросмотраРасширеннаяПодсказка" id="44"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ОбъектыАрендыУправлениеПоиском" id="45">
+						<AdditionSource>
+							<Item>ОбъектыАренды</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ОбъектыАрендыУправлениеПоискомКонтекстноеМеню" id="46"/>
+						<ExtendedTooltip name="ОбъектыАрендыУправлениеПоискомРасширеннаяПодсказка" id="47"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ОбъектыАрендыНомерСтроки" id="16">
+							<DataPath>Объект.ОбъектыАренды.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ОбъектыАрендыНомерСтрокиКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ОбъектыАрендыНомерСтрокиРасширеннаяПодсказка" id="48"/>
+						</LabelField>
+						<InputField name="ОбъектыАрендыОбъектАренды" id="18">
+							<DataPath>Объект.ОбъектыАренды.ОбъектАренды</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ОбъектыАрендыОбъектАрендыКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ОбъектыАрендыОбъектАрендыРасширеннаяПодсказка" id="49"/>
+						</InputField>
+						<InputField name="ОбъектыАрендыСтатус" id="20">
+							<DataPath>Объект.ОбъектыАренды.Статус</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ОбъектыАрендыСтатусКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ОбъектыАрендыСтатусРасширеннаяПодсказка" id="50"/>
+						</InputField>
+						<InputField name="ОбъектыАрендыДатаНачала" id="22">
+							<DataPath>Объект.ОбъектыАренды.ДатаНачала</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ОбъектыАрендыДатаНачалаКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ОбъектыАрендыДатаНачалаРасширеннаяПодсказка" id="51"/>
+						</InputField>
+						<InputField name="ОбъектыАрендыДатаОкончания" id="24">
+							<DataPath>Объект.ОбъектыАренды.ДатаОкончания</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ОбъектыАрендыДатаОкончанияКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ОбъектыАрендыДатаОкончанияРасширеннаяПодсказка" id="52"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Подвал" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ПодвалРасширеннаяПодсказка" id="53"/>
+			<ChildItems>
+				<InputField name="Ответственный" id="29">
+					<DataPath>Объект.Ответственный</DataPath>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="54"/>
+				</InputField>
+				<InputField name="Комментарий" id="31">
+					<DataPath>Объект.Комментарий</DataPath>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="55"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.АР_ИзменениеСтатусовОбъектов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

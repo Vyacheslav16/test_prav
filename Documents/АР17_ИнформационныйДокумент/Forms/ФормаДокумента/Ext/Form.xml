@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Group>Vertical</Group>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<UsualGroup name="ШапкаЛево" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ШапкаЛевоРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<InputField name="Номер" id="1">
+							<DataPath>Объект.Number</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Дата" id="4">
+							<DataPath>Объект.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=dd.MM.yyyy</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="ИК" id="61">
+							<DataPath>Объект.ИК</DataPath>
+							<ContextMenu name="ИККонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ИКРасширеннаяПодсказка" id="63"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ШапкаСередина" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка середина</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка середина</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ШапкаСерединаРасширеннаяПодсказка" id="33"/>
+					<ChildItems>
+						<InputField name="ДокументОснование" id="19">
+							<DataPath>Объект.ДокументОснование</DataPath>
+							<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="21"/>
+							<Events>
+								<Event name="OnChange">ДокументОснованиеПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДоговорКонтрагента" id="7">
+							<DataPath>Объект.ДоговорКонтрагента</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ДоговорКонтрагентаКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ДоговорКонтрагентаРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="Наименование" id="25">
+							<DataPath>Объект.Наименование</DataPath>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="27"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ШапкаПраво" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ШапкаПравоРасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<InputField name="Передан" id="13">
+							<DataPath>Объект.Передан</DataPath>
+							<ContextMenu name="ПереданКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ПереданРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="Возвращен" id="16">
+							<DataPath>Объект.Возвращен</DataPath>
+							<ContextMenu name="ВозвращенКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ВозвращенРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="Ответственный" id="22">
+							<DataPath>Объект.Ответственный</DataPath>
+							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="24"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Текст" id="10">
+			<DataPath>Объект.Текст</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<ContextMenu name="ТекстКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ТекстРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Table name="Получатели" id="36">
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Получатели</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПолучателиКонтекстноеМеню" id="37"/>
+			<AutoCommandBar name="ПолучателиКоманднаяПанель" id="38">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ПолучателиЗаполнитьПоИК" id="64">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьПоИК</CommandName>
+						<ExtendedTooltip name="ПолучателиЗаполнитьПоИКРасширеннаяПодсказка" id="65"/>
+					</Button>
+					<Button name="ПолучателиОтметитьВсе" id="69">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтметитьВсе</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.CheckAll</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ПолучателиОтметитьВсеРасширеннаяПодсказка" id="70"/>
+					</Button>
+					<Button name="ПолучателиСнятьОтметку" id="73">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СнятьОтметку</CommandName>
+						<ExtendedTooltip name="ПолучателиСнятьОтметкуРасширеннаяПодсказка" id="74"/>
+					</Button>
+					<Button name="ПолучателиОтправитьПисьма" id="71">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтправитьПисьма</CommandName>
+						<ExtendedTooltip name="ПолучателиОтправитьПисьмаРасширеннаяПодсказка" id="72"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ПолучателиРасширеннаяПодсказка" id="39"/>
+			<SearchStringAddition name="ПолучателиСтрокаПоиска" id="40">
+				<AdditionSource>
+					<Item>Получатели</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПолучателиСтрокаПоискаКонтекстноеМеню" id="41"/>
+				<ExtendedTooltip name="ПолучателиСтрокаПоискаРасширеннаяПодсказка" id="42"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПолучателиСостояниеПросмотра" id="43">
+				<AdditionSource>
+					<Item>Получатели</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПолучателиСостояниеПросмотраКонтекстноеМеню" id="44"/>
+				<ExtendedTooltip name="ПолучателиСостояниеПросмотраРасширеннаяПодсказка" id="45"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПолучателиУправлениеПоиском" id="46">
+				<AdditionSource>
+					<Item>Получатели</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПолучателиУправлениеПоискомКонтекстноеМеню" id="47"/>
+				<ExtendedTooltip name="ПолучателиУправлениеПоискомРасширеннаяПодсказка" id="48"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ПолучателиВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ПолучателиНомерСтроки" id="49">
+					<DataPath>Объект.Получатели.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ПолучателиНомерСтрокиКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ПолучателиНомерСтрокиРасширеннаяПодсказка" id="51"/>
+				</LabelField>
+				<InputField name="ПолучателиКонтрагент" id="52">
+					<DataPath>Объект.Получатели.Контрагент</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ПолучателиКонтрагентКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ПолучателиКонтрагентРасширеннаяПодсказка" id="54"/>
+				</InputField>
+				<InputField name="ПолучателиEMail" id="55">
+					<DataPath>Объект.Получатели.EMail</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ПолучателиEMailКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ПолучателиEMailРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<InputField name="ПолучателиДатаОтправки" id="58">
+					<DataPath>Объект.Получатели.ДатаОтправки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ПолучателиДатаОтправкиКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ПолучателиДатаОтправкиРасширеннаяПодсказка" id="60"/>
+					<Events>
+						<Event name="OnChange">ПолучателиДатаОтправкиПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="ПолучателиВыбран" id="66">
+					<DataPath>Объект.Получатели.Выбран</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ПолучателиВыбранКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ПолучателиВыбранРасширеннаяПодсказка" id="68"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.АР17_ИнформационныйДокумент</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Объект.Получатели">
+					<Column name="Выбран" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выбран</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Получатели</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Получатели.Выбран</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПолучателиНомерСтроки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Получатели.Выбран</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>✓</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьПоИК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по ИК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по ИК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоИК</Action>
+		</Command>
+		<Command name="ОтметитьВсе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отметить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отметить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтметитьВсе</Action>
+		</Command>
+		<Command name="ОтправитьПисьма" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить письма</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить письма</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьПисьма</Action>
+		</Command>
+		<Command name="СнятьОтметку" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять отметку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять отметку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьОтметку</Action>
+		</Command>
+	</Commands>
+</Form>

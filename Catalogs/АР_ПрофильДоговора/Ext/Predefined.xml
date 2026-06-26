@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="57950661-f7e0-4717-9fc3-7db704d137c6">
+		<Name>Аксессуары</Name>
+		<Code>000000006</Code>
+		<Description>Аксессуары</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bea26e9c-e9db-4948-9f3c-a8ce74d251fe">
+		<Name>Банкоматы</Name>
+		<Code>000000001</Code>
+		<Description>Банкоматы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e86576aa-7758-4932-92c0-18020981e749">
+		<Name>Белье</Name>
+		<Code>000000018</Code>
+		<Description>Белье</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6b54a10a-3d6a-4070-8115-069011d6b50c">
+		<Name>Бижутерия</Name>
+		<Code>000000016</Code>
+		<Description>Бижутерия</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5f5b3078-3ca0-4aed-a953-175859bf05ee">
+		<Name>ВендинговыеАппараты</Name>
+		<Code>000000002</Code>
+		<Description>Вендинговые аппараты</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9e3c3143-be4f-4e7d-9cdf-acebab61852e">
+		<Name>ДетскиеТовары</Name>
+		<Code>000000012</Code>
+		<Description>Детские товары</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d68e8605-f8e4-4ed4-abaa-b6fd409668ed">
+		<Name>ЖенскаяОдежда</Name>
+		<Code>000000019</Code>
+		<Description>Женская одежда</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e9884162-cb35-424c-8c3d-188187ebe787">
+		<Name>КафеИРестораны</Name>
+		<Code>000000007</Code>
+		<Description>Кафе и рестораны</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8d08e11f-1d44-4efa-917f-9217560f39f9">
+		<Name>КрасотаИЗдоровье</Name>
+		<Code>000000005</Code>
+		<Description>Красота и здоровье</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="74f90c30-d300-4f24-89cd-1be44c4b8cc5">
+		<Name>МобильнаяСвязь</Name>
+		<Code>000000008</Code>
+		<Description>Мобильная связь</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6cc80544-7dc4-4e7f-a716-03e22010c08f">
+		<Name>Обувь</Name>
+		<Code>000000014</Code>
+		<Description>Обувь</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="054b0082-147d-4632-89f8-2f0c0108ee95">
+		<Name>Одежда</Name>
+		<Code>000000013</Code>
+		<Description>Одежда</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8e67d8f0-8383-4a19-9865-6e9d1ad1b120">
+		<Name>Оптика</Name>
+		<Code>000000004</Code>
+		<Description>Оптика</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="96d2dacc-7dfc-44d5-84f4-73a86f223a71">
+		<Name>Подарки</Name>
+		<Code>000000010</Code>
+		<Description>Подарки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="88e3c1c9-be1f-4e96-a6d8-97cbc24fb235">
+		<Name>Развлечения</Name>
+		<Code>000000011</Code>
+		<Description>Развлечения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="048f1d10-2396-4f7b-9010-b69442acfd00">
+		<Name>Спорт</Name>
+		<Code>000000015</Code>
+		<Description>Спорт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e9060039-8a49-401c-9441-0ea5ed219f54">
+		<Name>ТоварыДляДома</Name>
+		<Code>000000017</Code>
+		<Description>Товары для дома</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4b226044-5cf0-47ca-852c-299a259b826e">
+		<Name>Электроника</Name>
+		<Code>000000003</Code>
+		<Description>Электроника</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="df83efc7-89a4-4a2b-a17f-7b37dd9b1e00">
+		<Name>Ювелирный</Name>
+		<Code>000000009</Code>
+		<Description>Ювелирный</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

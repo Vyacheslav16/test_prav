@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="00c2ba86-c854-4993-abae-d6ba3dd7836e">
+		<Name>Аренда</Name>
+		<Code>000000001</Code>
+		<Description>Аренда</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ff17e337-2100-4ed1-a946-b860bd6fba58">
+		<Name>НеСформирован</Name>
+		<Code>000000005</Code>
+		<Description>Не сформирован</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5a971e07-77a5-406c-aebe-cfb3dc4b7442">
+		<Name>ПолученоРаспоряжение</Name>
+		<Code>000000004</Code>
+		<Description>Получено распоряжение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cca6240b-47b7-4c37-816f-be0830862baf">
+		<Name>Собственность</Name>
+		<Code>000000002</Code>
+		<Description>Собственность</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f40b1895-4239-4f6a-b3f5-5627193b8ba5">
+		<Name>Субаренда</Name>
+		<Code>000000003</Code>
+		<Description>Субаренда</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

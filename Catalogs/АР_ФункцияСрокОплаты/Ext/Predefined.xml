@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="78137919-780f-4484-a009-f3c59d2796bc">
+		<Name>ДоЧислоКварталаСледующегоЗаОплачиваемым</Name>
+		<Code>000000009</Code>
+		<Description>До ЧИСЛО квартала, следующего за оплачиваемым</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6caacfee-0c3f-43bb-baa7-1b7caedff492">
+		<Name>ДоЧислоМесяцаСледующегоЗаОплачиваемым</Name>
+		<Code>000000003</Code>
+		<Description>До ЧИСЛО месяца, следующего за оплачиваемым</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e03fd833-5ed8-488a-a783-f78066a5d888">
+		<Name>ДоЧислоОплачиваемогоКвартала</Name>
+		<Code>000000008</Code>
+		<Description>До ЧИСЛО оплачиваемого квартала</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6a29630c-0c82-4cc3-9c32-3ba09ef5ec2f">
+		<Name>ДоЧислоОплачиваемогоМесяца</Name>
+		<Code>000000002</Code>
+		<Description>До ЧИСЛО оплачиваемого месяца</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2d042be3-1abf-41ad-bf4a-7e2b43c59944">
+		<Name>ДоЧислоПредшествующегоКвартала</Name>
+		<Code>000000007</Code>
+		<Description>До ЧИСЛО предшествующего квартала</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5d851f8d-5eff-44e6-b18d-72e74ea48382">
+		<Name>ДоЧислоПредшествующегоМесяца</Name>
+		<Code>000000001</Code>
+		<Description>до ЧИСЛО предшествующего месяца</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cccef385-889e-47b0-b1f0-2b6695e6ba98">
+		<Name>РабочихДнейДоОкончанияПредшествующегоКвартала</Name>
+		<Code>000000010</Code>
+		<Description>РАБОЧИХ ДНЕЙ до окончания предшествующего квартала</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6f1565c1-653b-436e-a3be-030154588d51">
+		<Name>РабочихДнейДоОкончанияПредшествующегоМесяца</Name>
+		<Code>000000004</Code>
+		<Description>РАБОЧИХ ДНЕЙ до окончания предшествующего месяца</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f048b113-8fff-4b43-a1b6-882a8e7141d5">
+		<Name>РабочихДнейПослеНачалаКварталаСледующегоЗаОтчетным</Name>
+		<Code>000000012</Code>
+		<Description>РАБОЧИХ ДНЕЙ после начала квартала, следующего за отчетным</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="611f8d3e-c3ec-4a51-99da-0593701b9b1f">
+		<Name>РабочихДнейПослеНачалаМесяцаСледующегоЗаОтчетным</Name>
+		<Code>000000006</Code>
+		<Description>РАБОЧИХ ДНЕЙ после начала месяца, следующего за отчетным</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4747e384-9109-4fe2-adff-bf2599a36ed5">
+		<Name>РабочихДнейПослеНачалаОплачиваемогоКвартала</Name>
+		<Code>000000011</Code>
+		<Description>РАБОЧИХ ДНЕЙ после начала оплачиваемого квартала</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="dcc6da14-77e4-4514-82d4-147394b161e8">
+		<Name>РабочихДнейПослеНачалаОплачиваемогоМесяца</Name>
+		<Code>000000005</Code>
+		<Description>РАБОЧИХ ДНЕЙ после начала оплачиваемого месяца</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="be063514-d3fd-4106-9138-72e4663be541">
+		<Name>РабочихДнейПослеОтправленияСчета</Name>
+		<Code>000000013</Code>
+		<Description>РАБОЧИХ ДНЕЙ после отправления счета</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1fab94e5-61d1-4813-86f5-697173f698cc">
+		<Name>РабочихДнейПослеПодписанияАктаДоступа</Name>
+		<Code>000000017</Code>
+		<Description>РАБОЧИХ ДНЕЙ после подписания акта доступа</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fd7536e5-3fda-4f41-aae0-47b8030fd8bd">
+		<Name>РабочихДнейПослеПодписанияАктаПриемаПередачи</Name>
+		<Code>000000016</Code>
+		<Description>РАБОЧИХ ДНЕЙ после подписания акта приема-передачи</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="510c6bd7-a8cd-4d55-b0fc-6ea66c72aad0">
+		<Name>РабочихДнейПослеПодписанияДоговора</Name>
+		<Code>000000015</Code>
+		<Description>РАБОЧИХ ДНЕЙ после подписания договора</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="20d068f7-be45-4894-889d-345ade4c1add">
+		<Name>РабочихДнейПослеПолученияСчета</Name>
+		<Code>000000014</Code>
+		<Description>РАБОЧИХ ДНЕЙ после получения счета</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

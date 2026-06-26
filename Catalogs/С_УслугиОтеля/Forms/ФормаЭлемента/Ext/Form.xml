@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ИК" id="7">
+			<DataPath>Объект.ИК</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="ИККонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ИКРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ГруппаУслугОтеля" id="28">
+			<DataPath>Объект.ГруппаУслугОтеля</DataPath>
+			<ContextMenu name="ГруппаУслугОтеляКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ГруппаУслугОтеляРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="ГруппаУслугДляОтчетаСобственникуПоКотлу" id="37">
+			<DataPath>Объект.ГруппаУслугДляОтчетаСобственникуПоКотлу</DataPath>
+			<ContextMenu name="ГруппаУслугДляОтчетаСобственникуПоКотлуКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ГруппаУслугДляОтчетаСобственникуПоКотлуРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<CheckBoxField name="Краткосрок" id="46">
+			<DataPath>Объект.Краткосрок</DataPath>
+			<ContextMenu name="КраткосрокКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="КраткосрокРасширеннаяПодсказка" id="48"/>
+		</CheckBoxField>
+		<CheckBoxField name="Долгосрок" id="49">
+			<DataPath>Объект.Долгосрок</DataPath>
+			<ContextMenu name="ДолгосрокКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="ДолгосрокРасширеннаяПодсказка" id="51"/>
+		</CheckBoxField>
+		<CheckBoxField name="КраткосрокРасчетНочей" id="58">
+			<DataPath>Объект.КраткосрокРасчетНочей</DataPath>
+			<ContextMenu name="КраткосрокРасчетНочейКонтекстноеМеню" id="59"/>
+			<ExtendedTooltip name="КраткосрокРасчетНочейРасширеннаяПодсказка" id="60"/>
+		</CheckBoxField>
+		<CheckBoxField name="ДолгосрокРасчетНочей" id="61">
+			<DataPath>Объект.ДолгосрокРасчетНочей</DataPath>
+			<ContextMenu name="ДолгосрокРасчетНочейКонтекстноеМеню" id="62"/>
+			<ExtendedTooltip name="ДолгосрокРасчетНочейРасширеннаяПодсказка" id="63"/>
+		</CheckBoxField>
+		<InputField name="КодУслуги" id="10">
+			<DataPath>Объект.КодУслуги</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="КодУслугиКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="КодУслугиРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Порядок" id="13">
+			<DataPath>Объект.Порядок</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="ПорядокКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПорядокРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<CheckBoxField name="УчаствуетВРасчетеНочей" id="25">
+			<DataPath>Объект.УчаствуетВРасчетеНочей</DataPath>
+			<ContextMenu name="УчаствуетВРасчетеНочейКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="УчаствуетВРасчетеНочейРасширеннаяПодсказка" id="27"/>
+		</CheckBoxField>
+		<CheckBoxField name="ВозмещаемаяУслуга" id="34">
+			<DataPath>Объект.ВозмещаемаяУслуга</DataPath>
+			<ContextMenu name="ВозмещаемаяУслугаКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ВозмещаемаяУслугаРасширеннаяПодсказка" id="36"/>
+		</CheckBoxField>
+		<CheckBoxField name="ЭтоНДС" id="55">
+			<DataPath>Объект.ЭтоНДС</DataPath>
+			<ContextMenu name="ЭтоНДСКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="ЭтоНДСРасширеннаяПодсказка" id="57"/>
+		</CheckBoxField>
+		<InputField name="НоменклатураВозмещаемойУслуги" id="40">
+			<DataPath>Объект.НоменклатураВозмещаемойУслуги</DataPath>
+			<ContextMenu name="НоменклатураВозмещаемойУслугиКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="НоменклатураВозмещаемойУслугиРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="СтатьяРасходовПоКотлуВозмещаемойУслуги" id="43">
+			<DataPath>Объект.СтатьяРасходовПоКотлуВозмещаемойУслуги</DataPath>
+			<ContextMenu name="СтатьяРасходовПоКотлуВозмещаемойУслугиКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="СтатьяРасходовПоКотлуВозмещаемойУслугиРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="СтатьяДоходовПоКотлуДляРаспределения" id="52">
+			<DataPath>Объект.СтатьяДоходовПоКотлуДляРаспределения</DataPath>
+			<ContextMenu name="СтатьяДоходовПоКотлуДляРаспределенияКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="СтатьяДоходовПоКотлуДляРаспределенияРасширеннаяПодсказка" id="54"/>
+		</InputField>
+		<CheckBoxField name="НеОтражатьВРТУ" id="16">
+			<DataPath>Объект.НеОтражатьВРТУ</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="НеОтражатьВРТУКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="НеОтражатьВРТУРасширеннаяПодсказка" id="18"/>
+		</CheckBoxField>
+		<CheckBoxField name="НеОтражатьВТаблицах" id="19">
+			<DataPath>Объект.НеОтражатьВТаблицах</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="НеОтражатьВТаблицахКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="НеОтражатьВТаблицахРасширеннаяПодсказка" id="21"/>
+		</CheckBoxField>
+		<CheckBoxField name="НеОтражатьВКотлах" id="31">
+			<DataPath>Объект.НеОтражатьВКотлах</DataPath>
+			<ContextMenu name="НеОтражатьВКотлахКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="НеОтражатьВКотлахРасширеннаяПодсказка" id="33"/>
+		</CheckBoxField>
+		<CheckBoxField name="ГостьИПериодВСодержанииУслуги" id="22">
+			<DataPath>Объект.ГостьИПериодВСодержанииУслуги</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="ГостьИПериодВСодержанииУслугиКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ГостьИПериодВСодержанииУслугиРасширеннаяПодсказка" id="24"/>
+		</CheckBoxField>
+		<UsualGroup name="Группа1" id="67">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="68"/>
+			<ChildItems>
+				<CheckBoxField name="НеВклвАДР" id="64">
+					<DataPath>Объект.НеВклвАДР</DataPath>
+					<ContextMenu name="НеВклвАДРКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="НеВклвАДРРасширеннаяПодсказка" id="66"/>
+				</CheckBoxField>
+				<LabelDecoration name="Декорация1" id="69">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Услуга не будет учтена при расчёте среднего тарифа для отчёта собственнику</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="71"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.С_УслугиОтеля</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

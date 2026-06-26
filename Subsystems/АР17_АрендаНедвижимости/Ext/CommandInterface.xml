@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<CommandsVisibility>
+		<Command name="CommonForm.АР_ОтчетыПоНедвижимости.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.АР17_КорректировкаОстатковРасчетовПоДоговорам.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.АР17_АрендаНедвижимости.Subsystem.УправлениеОбъектами</Subsystem>
+		<Subsystem>Subsystem.АР17_АрендаНедвижимости.Subsystem.УправлениеДоговорами</Subsystem>
+		<Subsystem>Subsystem.АР17_АрендаНедвижимости.Subsystem.УправлениеВзаиморасчетами</Subsystem>
+		<Subsystem>Subsystem.АР17_АрендаНедвижимости.Subsystem.УправлениеЭксплуатацией</Subsystem>
+		<Subsystem>Subsystem.АР17_АрендаНедвижимости.Subsystem.УправлениеЗемельнымиУчастками</Subsystem>
+	</SubsystemsOrder>
+</CommandInterface>

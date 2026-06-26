@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоговорДок</dataPath>
+			<field>ДоговорДок</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Договор </v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>"Договор № " + Строка(ДоговорДок.Номер)+" от "+Формат(ДоговорДок.Дата,"ДЛФ=Д")</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектАренды</dataPath>
+			<field>ОбъектАренды</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПереданоЭкземпляров</dataPath>
+			<field>ПереданоЭкземпляров</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передано экземпляров</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоговорКонтрагента</dataPath>
+			<field>ДоговорКонтрагента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИК</dataPath>
+			<field>ИК</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ИК</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОрганизацияОтчет</dataPath>
+			<field>ОрганизацияОтчет</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация </v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Документ</dataPath>
+			<field>Документ</field>
+			<presentationExpression>АР_РаботаСоШтрихКодами.АР17_ПолучитьРегистратор(Документ)</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтрагентОтчет</dataPath>
+			<field>КонтрагентОтчет</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент </v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Индекс</dataPath>
+			<field>Индекс</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Индекс</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидДоговора</dataPath>
+			<field>ВидДоговора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид договора</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	АР_ПереданныеДокументыОстатки.Документ КАК Документ,
+	АР_ПереданныеДокументыОстатки.ПереданоЭкземпляровОстаток КАК ПереданоЭкземпляровОстаток
+ПОМЕСТИТЬ ОстаткиРегистра
+ИЗ
+	РегистрНакопления.АР_ПереданныеДокументы.Остатки(
+			,
+			Документ &lt;&gt; НЕОПРЕДЕЛЕНО
+				И НЕ ТИПЗНАЧЕНИЯ(Документ) = ТИП(Документ.АР17_СчетНаАренду)
+				И НЕ ТИПЗНАЧЕНИЯ(Документ) = ТИП(Документ.СчетФактураВыданный)) КАК АР_ПереданныеДокументыОстатки
+ГДЕ
+	АР_ПереданныеДокументыОстатки.ПереданоЭкземпляровОстаток &gt; 0
+	И НЕ АР_ПереданныеДокументыОстатки.Документ ССЫЛКА Документ.АР_ЗаключениеДоговораАренды
+	И НЕ АР_ПереданныеДокументыОстатки.Документ ССЫЛКА Документ.АР_НачислениеАренднойПлаты
+	И НЕ АР_ПереданныеДокументыОстатки.Документ ССЫЛКА Документ.АР_СчетНаАренду
+	И НЕ АР_ПереданныеДокументыОстатки.Документ ССЫЛКА Документ.АР_ДополнительноеСоглашение
+	И НЕ АР_ПереданныеДокументыОстатки.Документ ССЫЛКА Документ.АР_РасторжениеДоговораАренды
+	И ВЫБОР
+			КОГДА АР_ПереданныеДокументыОстатки.Документ ССЫЛКА Документ.АР_АктПриемаПередачиПомещенияВАренду
+				ТОГДА НЕ АР_ПереданныеДокументыОстатки.Документ.ДокументОснование ССЫЛКА Документ.АР_ЗаключениеДоговораАренды
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+	И АР_ПереданныеДокументыОстатки.Документ.ДокументОснование &lt;&gt; НЕОПРЕДЕЛЕНО
+	И НЕ АР_ПереданныеДокументыОстатки.Документ.ДокументОснование ССЫЛКА Документ.АР_РасторжениеДоговораАренды
+	И НЕ АР_ПереданныеДокументыОстатки.Документ.ДокументОснование ССЫЛКА Документ.АР_ДополнительноеСоглашение
+	И НЕ АР_ПереданныеДокументыОстатки.Документ.ДокументОснование ССЫЛКА Документ.АР_СчетНаАренду
+	И НЕ АР_ПереданныеДокументыОстатки.Документ.ДокументОснование ССЫЛКА Документ.АР_НачислениеАренднойПлаты
+	И НЕ АР_ПереданныеДокументыОстатки.Документ.ДокументОснование ССЫЛКА Документ.АР_ЗаключениеДоговораАренды
+	И НЕ АР_ПереданныеДокументыОстатки.Документ.ДокументОснование = НЕОПРЕДЕЛЕНО
+	И ВЫБОР
+			КОГДА АР_ПереданныеДокументыОстатки.Документ ССЫЛКА Документ.АР_АктПриемаВозвратаАрендуемогоПомещения
+				ТОГДА НЕ АР_ПереданныеДокументыОстатки.Документ.ДокументОснование.ДокументОснование = НЕОПРЕДЕЛЕНО
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	АР_ВозвращенныеДокументы.Документ КАК Документ,
+	ВЫБОР
+		КОГДА АР_ВозвращенныеДокументы.Дата = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ПереданоЭкземпляровОстаток
+ПОМЕСТИТЬ ОстаткиРегистра2
+ИЗ
+	РегистрСведений.АР_ВозвращенныеДокументы КАК АР_ВозвращенныеДокументы
+ГДЕ
+	НЕ АР_ВозвращенныеДокументы.Документ ССЫЛКА Документ.АР_ЗаключениеДоговораАренды
+	И НЕ АР_ВозвращенныеДокументы.Документ ССЫЛКА Документ.АР_НачислениеАренднойПлаты
+	И НЕ АР_ВозвращенныеДокументы.Документ ССЫЛКА Документ.АР_СчетНаАренду
+	И НЕ АР_ВозвращенныеДокументы.Документ ССЫЛКА Документ.АР_ДополнительноеСоглашение
+	И НЕ АР_ВозвращенныеДокументы.Документ ССЫЛКА Документ.АР_РасторжениеДоговораАренды
+	И ВЫБОР
+			КОГДА АР_ВозвращенныеДокументы.Документ ССЫЛКА Документ.АР_АктПриемаПередачиПомещенияВАренду
+				ТОГДА НЕ АР_ВозвращенныеДокументы.Документ.ДокументОснование ССЫЛКА Документ.АР_ЗаключениеДоговораАренды
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+	И АР_ВозвращенныеДокументы.Документ.ДокументОснование &lt;&gt; НЕОПРЕДЕЛЕНО
+	И НЕ АР_ВозвращенныеДокументы.Документ.ДокументОснование ССЫЛКА Документ.АР_РасторжениеДоговораАренды
+	И НЕ АР_ВозвращенныеДокументы.Документ.ДокументОснование ССЫЛКА Документ.АР_ДополнительноеСоглашение
+	И НЕ АР_ВозвращенныеДокументы.Документ.ДокументОснование ССЫЛКА Документ.АР_СчетНаАренду
+	И НЕ АР_ВозвращенныеДокументы.Документ.ДокументОснование ССЫЛКА Документ.АР_НачислениеАренднойПлаты
+	И НЕ АР_ВозвращенныеДокументы.Документ.ДокументОснование ССЫЛКА Документ.АР_ЗаключениеДоговораАренды
+	И НЕ АР_ВозвращенныеДокументы.Документ.ДокументОснование = НЕОПРЕДЕЛЕНО
+	И ВЫБОР
+			КОГДА АР_ВозвращенныеДокументы.Документ ССЫЛКА Документ.АР_АктПриемаВозвратаАрендуемогоПомещения
+				ТОГДА НЕ АР_ВозвращенныеДокументы.Документ.ДокументОснование.ДокументОснование = НЕОПРЕДЕЛЕНО
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ОстаткиРегистра.Документ КАК Документ,
+	ВЫБОР
+		КОГДА ОстаткиРегистра.ПереданоЭкземпляровОстаток = 1
+			ТОГДА ВЫБОР
+					КОГДА НЕ ОстаткиРегистра2.Документ ЕСТЬ NULL
+						ТОГДА 0
+					ИНАЧЕ 1
+				КОНЕЦ
+		ИНАЧЕ 0
+	КОНЕЦ КАК ПереданоЭкземпляровОстаток,
+	ОстаткиРегистра2.Документ КАК Документ1,
+	ОстаткиРегистра2.ПереданоЭкземпляровОстаток КАК ПереданоЭкземпляровОстаток1
+ПОМЕСТИТЬ ОстаткиРегистра3
+ИЗ
+	ОстаткиРегистра КАК ОстаткиРегистра
+		ЛЕВОЕ СОЕДИНЕНИЕ ОстаткиРегистра2 КАК ОстаткиРегистра2
+		ПО ОстаткиРегистра.Документ = ОстаткиРегистра2.Документ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ОстаткиРегистра3.Документ КАК Документ,
+	ОстаткиРегистра3.ПереданоЭкземпляровОстаток КАК ПереданоЭкземпляровОстаток,
+	АР17_ЗаключениеДоговораАренды.Ссылка КАК ДоговорДок,
+	ЕСТЬNULL(АР17_ЗаключениеДоговораАренды.Контрагент, ОстаткиРегистра3.Документ.Контрагент) КАК Контрагент,
+	РеализацияТоваровУслуг.Ссылка КАК Акт,
+	ЕСТЬNULL(АР17_ЗаключениеДоговораАренды.Организация, ОстаткиРегистра3.Документ.Организация) КАК Организация
+ПОМЕСТИТЬ ОстаткиИДокументы
+ИЗ
+	ОстаткиРегистра3 КАК ОстаткиРегистра3
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.АР17_ЗаключениеДоговораАренды КАК АР17_ЗаключениеДоговораАренды
+		ПО ОстаткиРегистра3.Документ.ДоговорКонтрагента = АР17_ЗаключениеДоговораАренды.ДоговорКонтрагента
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.РеализацияТоваровУслуг КАК РеализацияТоваровУслуг
+		ПО ОстаткиРегистра3.Документ = РеализацияТоваровУслуг.СчетНаОплатуПокупателю
+ГДЕ
+	ОстаткиРегистра3.ПереданоЭкземпляровОстаток &lt;&gt; 0
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВЫБОР
+		КОГДА ОстаткиИДокументы.Акт ЕСТЬ NULL
+			ТОГДА ОстаткиИДокументы.ПереданоЭкземпляровОстаток
+		ИНАЧЕ 1
+	КОНЕЦ КАК ПереданоЭкземпляров,
+	ОстаткиИДокументы.Контрагент КАК КонтрагентОтчет,
+	ОстаткиИДокументы.ДоговорДок КАК ДоговорДок,
+	ВЫБОР
+		КОГДА НЕ ОстаткиИДокументы.Акт ЕСТЬ NULL
+			ТОГДА ОстаткиИДокументы.Акт
+		ИНАЧЕ ОстаткиИДокументы.Документ
+	КОНЕЦ КАК Документ,
+	ВЫБОР
+		КОГДА НЕ ОстаткиИДокументы.Акт ЕСТЬ NULL
+			ТОГДА 2
+		ИНАЧЕ 1
+	КОНЕЦ КАК Индекс,
+	ОстаткиИДокументы.Организация КАК ОрганизацияОтчет,
+	ОстаткиИДокументы.ДоговорДок.ИК КАК ИК,
+	ОстаткиИДокументы.ДоговорДок.ВидДоговора КАК ВидДоговора
+ПОМЕСТИТЬ ИтогСИндексами
+ИЗ
+	ОстаткиИДокументы КАК ОстаткиИДокументы
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ИтогСИндексами.ПереданоЭкземпляров КАК ПереданоЭкземпляров,
+	ИтогСИндексами.КонтрагентОтчет КАК КонтрагентОтчет,
+	ИтогСИндексами.ДоговорДок КАК ДоговорДок,
+	ИтогСИндексами.Документ КАК Документ,
+	ИтогСИндексами.Индекс КАК Индекс,
+	ИтогСИндексами.ОрганизацияОтчет КАК ОрганизацияОтчет,
+	ИтогСИндексами.ИК КАК ИК,
+	ИтогСИндексами.ВидДоговора КАК ВидДоговора
+ИЗ
+	ИтогСИндексами КАК ИтогСИндексами
+{ГДЕ
+	(ИтогСИндексами.Индекс = &amp;ВидКомплекта)}
+
+УПОРЯДОЧИТЬ ПО
+	ИтогСИндексами.КонтрагентОтчет.Наименование,
+	ДоговорДок,
+	ИтогСИндексами.Документ.Дата</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>КДоговору</dataPath>
+		<expression>Выбор Когда Индекс = 1 Тогда ПереданоЭкземпляров Иначе 0 Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Комплект к договору аренды</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>БухДокументы</dataPath>
+		<expression>Выбор Когда Индекс = 2 Тогда ПереданоЭкземпляров Иначе 0 Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Бухгалтерские документы (Акты)</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>ПереданоЭкземпляров</dataPath>
+		<expression>Сумма(ПереданоЭкземпляров)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КДоговору</dataPath>
+		<expression>Сумма(КДоговору)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>БухДокументы</dataPath>
+		<expression>Сумма(БухДокументы)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<expression>НачалоПериода(&amp;Период, "День")</expression>
+	</parameter>
+	<parameter>
+		<name>ВидКомплекта</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид комплекта</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">0</value>
+		<useRestriction>false</useRestriction>
+		<availableValue>
+			<value xsi:type="xs:decimal">1</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплект документов договора</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">2</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплект бухгалтерских документов </v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+	</parameter>
+	<template>
+		<name>Макет1</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>В т.ч.</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Комплект к договору аренды</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">КДоговору</dcsat:value>
+					</dcsat:item>
+				</dcsat:tableCell>
+			</dcsat:item>
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Бухгалтерские документы (Акты)</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">БухДокументы</dcsat:value>
+					</dcsat:item>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>КДоговору</dcsat:name>
+			<dcsat:expression>КДоговору</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>БухДокументы</dcsat:name>
+			<dcsat:expression>БухДокументы</dcsat:expression>
+		</parameter>
+	</template>
+	<groupHeaderTemplate>
+		<groupName>ДопИтог</groupName>
+		<templateType>Footer</templateType>
+		<template>Макет1</template>
+	</groupHeaderTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ОрганизацияОтчет</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>32dc300b-f421-47b4-b5ac-7840d6166def</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ИК</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>9c877cc4-a3f9-4ba7-9325-66eb12b9dc68</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ВидДоговора</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>9a010e3d-c99c-4df5-83dc-c2210940cb89</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">КонтрагентОтчет</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>9ade0a6d-e094-4a1b-8b50-15ae2e779c6f</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>c732d586-597d-4ae8-b30c-44a9fa8e26e7</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВидКомплекта</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:userSettingID>8a204bd9-9e3a-4049-ad33-5bb6caecd0de</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Индекс</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отсутствующие документы</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>ДопИтог</dcsset:name>
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>КонтрагентОтчет</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПереданоЭкземпляров</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>КонтрагентОтчет</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter/>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+						<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+						<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отсутствующие документы</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ДоговорДок</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+							<dcsset:use>false</dcsset:use>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>Документ</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПереданоЭкземпляров</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ДоговорДок</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+								<dcsset:use>false</dcsset:use>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Документ</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ПереданоЭкземпляров</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

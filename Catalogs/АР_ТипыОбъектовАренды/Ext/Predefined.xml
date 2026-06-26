@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="200d7f2a-dd05-4bb9-8085-0095aeb4cb05">
+		<Name>Здание</Name>
+		<Code>000000002</Code>
+		<Description>Здание</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="59e0fa99-b4d8-4e6c-82e5-6995605a1043">
+		<Name>ЗемельныйУчасток</Name>
+		<Code>000000006</Code>
+		<Description>Земельный участок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c411ab13-4c2b-4bfb-bd3a-29c6662f03e5">
+		<Name>ИмущественныйКомплекс</Name>
+		<Code>000000001</Code>
+		<Description>Имущественный комплекс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e0e7b69f-2f97-4ba4-8d67-579e2b9ee762">
+		<Name>Офис</Name>
+		<Code>000000004</Code>
+		<Description>Офис</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e40b36c8-88f1-4e5e-8a78-d3b709a3e705">
+		<Name>Помещение</Name>
+		<Code>000000005</Code>
+		<Description>Помещение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="514bb0b7-b266-4422-95a6-dab7ba0e4e58">
+		<Name>Этаж</Name>
+		<Code>000000003</Code>
+		<Description>Этаж</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

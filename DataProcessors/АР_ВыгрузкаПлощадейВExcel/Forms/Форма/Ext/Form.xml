@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ИК" id="1">
+			<DataPath>Объект.ИК</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по объекту недвижимости</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="ИККонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ИКРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="StartChoice">ИКНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<Table name="ОбъектыАренды" id="4">
+			<Representation>List</Representation>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ОбъектыАренды</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОбъектыАрендыКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ОбъектыАрендыКоманднаяПанель" id="6">
+				<ChildItems>
+					<Button name="ОбъектыАрендыЗаполнить" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Заполнить</CommandName>
+						<ExtendedTooltip name="ОбъектыАрендыЗаполнитьРасширеннаяПодсказка" id="33"/>
+					</Button>
+					<Button name="ОбъектыАрендыВыгрузитьВExcel" id="37">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыгрузитьВExcel</CommandName>
+						<ExtendedTooltip name="ОбъектыАрендыВыгрузитьВExcelРасширеннаяПодсказка" id="38"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ОбъектыАрендыРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ОбъектыАрендыСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>ОбъектыАренды</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОбъектыАрендыСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ОбъектыАрендыСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОбъектыАрендыСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>ОбъектыАренды</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОбъектыАрендыСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ОбъектыАрендыСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОбъектыАрендыУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>ОбъектыАренды</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОбъектыАрендыУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ОбъектыАрендыУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ОбъектыАрендыНомерСтроки" id="17">
+					<DataPath>Объект.ОбъектыАренды.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ОбъектыАрендыНомерСтрокиКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ОбъектыАрендыНомерСтрокиРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<InputField name="ОбъектыАрендыЗдание" id="45">
+					<DataPath>Объект.ОбъектыАренды.Здание</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ОбъектыАрендыЗданиеКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="ОбъектыАрендыЗданиеРасширеннаяПодсказка" id="47"/>
+				</InputField>
+				<InputField name="ОбъектыАрендыЭтаж" id="34">
+					<DataPath>Объект.ОбъектыАренды.Этаж</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ОбъектыАрендыЭтажКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ОбъектыАрендыЭтажРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="ОбъектыАрендыОбъектАренды" id="42">
+					<DataPath>Объект.ОбъектыАренды.ОбъектАренды</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ОбъектыАрендыОбъектАрендыКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ОбъектыАрендыОбъектАрендыРасширеннаяПодсказка" id="44"/>
+				</InputField>
+				<InputField name="ОбъектыАрендыТипОбъекта" id="39">
+					<DataPath>Объект.ОбъектыАренды.ТипОбъекта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ОбъектыАрендыТипОбъектаКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ОбъектыАрендыТипОбъектаРасширеннаяПодсказка" id="41"/>
+				</InputField>
+				<InputField name="ОбъектыАрендыКомнатаНомерБТИ" id="20">
+					<DataPath>Объект.ОбъектыАренды.КомнатаНомерБТИ</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер комнаты по плану БТИ</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ОбъектыАрендыКомнатаНомерБТИКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ОбъектыАрендыКомнатаНомерБТИРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ОбъектыАрендыПомещениеНомерБТИ" id="23">
+					<DataPath>Объект.ОбъектыАренды.ПомещениеНомерБТИ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ОбъектыАрендыПомещениеНомерБТИКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ОбъектыАрендыПомещениеНомерБТИРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ОбъектыАрендыИндексПоБома" id="26">
+					<DataPath>Объект.ОбъектыАренды.ИндексПоБома</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс по БОМА</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ОбъектыАрендыИндексПоБомаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ОбъектыАрендыИндексПоБомаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ОбъектыАрендыПлощадь" id="29">
+					<DataPath>Объект.ОбъектыАренды.Площадь</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ОбъектыАрендыПлощадьКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ОбъектыАрендыПлощадьРасширеннаяПодсказка" id="31"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.АР_ВыгрузкаПлощадейВExcel</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Заполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заполнить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыгрузитьВExcel" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в excel</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в excel</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьВExcel</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

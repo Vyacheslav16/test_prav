@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаключениеДоговораАренды</dataPath>
+			<field>ЗаключениеДоговораАренды</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>ПостояннаяЧастьАренднойПлаты</dataPath>
+			<field>ПостояннаяЧастьАренднойПлаты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПостояннаяЧастьАренднойПлаты.НомерСтроки</dataPath>
+			<field>ПостояннаяЧастьАренднойПлаты.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПостояннаяЧастьАренднойПлаты.Ссылка</dataPath>
+			<field>ПостояннаяЧастьАренднойПлаты.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПостояннаяЧастьАренднойПлаты.ДатаНачалаСрокаАренды</dataPath>
+			<field>ПостояннаяЧастьАренднойПлаты.ДатаНачалаСрокаАренды</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПостояннаяЧастьАренднойПлаты.ДатаОкончанияСрокаАренды</dataPath>
+			<field>ПостояннаяЧастьАренднойПлаты.ДатаОкончанияСрокаАренды</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПостояннаяЧастьАренднойПлаты.Количество</dataPath>
+			<field>ПостояннаяЧастьАренднойПлаты.Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПостояннаяЧастьАренднойПлаты.ОбъектАренды</dataPath>
+			<field>ПостояннаяЧастьАренднойПлаты.ОбъектАренды</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПостояннаяЧастьАренднойПлаты.СпособНачисления</dataPath>
+			<field>ПостояннаяЧастьАренднойПлаты.СпособНачисления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПостояннаяЧастьАренднойПлаты.Ставка</dataPath>
+			<field>ПостояннаяЧастьАренднойПлаты.Ставка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПостояннаяЧастьАренднойПлаты.Услуга</dataPath>
+			<field>ПостояннаяЧастьАренднойПлаты.Услуга</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>ПеременнаяЧастьАренднойПлаты</dataPath>
+			<field>ПеременнаяЧастьАренднойПлаты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПеременнаяЧастьАренднойПлаты.НомерСтроки</dataPath>
+			<field>ПеременнаяЧастьАренднойПлаты.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПеременнаяЧастьАренднойПлаты.Ссылка</dataPath>
+			<field>ПеременнаяЧастьАренднойПлаты.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПеременнаяЧастьАренднойПлаты.ДатаНачалаСрокаАренды</dataPath>
+			<field>ПеременнаяЧастьАренднойПлаты.ДатаНачалаСрокаАренды</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПеременнаяЧастьАренднойПлаты.ДатаОкончанияСрокаАренды</dataPath>
+			<field>ПеременнаяЧастьАренднойПлаты.ДатаОкончанияСрокаАренды</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПеременнаяЧастьАренднойПлаты.ЕдиницаИзмерения</dataPath>
+			<field>ПеременнаяЧастьАренднойПлаты.ЕдиницаИзмерения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПеременнаяЧастьАренднойПлаты.Количество</dataPath>
+			<field>ПеременнаяЧастьАренднойПлаты.Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПеременнаяЧастьАренднойПлаты.КоэффициентОтнесенияСчетчика</dataPath>
+			<field>ПеременнаяЧастьАренднойПлаты.КоэффициентОтнесенияСчетчика</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПеременнаяЧастьАренднойПлаты.ОбъектАренды</dataPath>
+			<field>ПеременнаяЧастьАренднойПлаты.ОбъектАренды</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПеременнаяЧастьАренднойПлаты.СпособНачисления</dataPath>
+			<field>ПеременнаяЧастьАренднойПлаты.СпособНачисления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПеременнаяЧастьАренднойПлаты.Ставка</dataPath>
+			<field>ПеременнаяЧастьАренднойПлаты.Ставка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПеременнаяЧастьАренднойПлаты.Счетчик</dataPath>
+			<field>ПеременнаяЧастьАренднойПлаты.Счетчик</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПеременнаяЧастьАренднойПлаты.Услуга</dataPath>
+			<field>ПеременнаяЧастьАренднойПлаты.Услуга</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПостояннаяЧастьАренднойПлаты.Сумма</dataPath>
+			<field>ПостояннаяЧастьАренднойПлаты.Сумма</field>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ДополнительныеПоля</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные поля</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеПоля.СписокОбъектовАрендыЧерезЗапятую</dataPath>
+			<field>СписокОбъектовАрендыЧерезЗапятую</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеПоля.ОбщаяПлощадь</dataPath>
+			<field>ОбщаяПлощадь</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеПоля.ОбщаяСуммаПостояннойЧасти</dataPath>
+			<field>ОбщаяСуммаПостояннойЧасти</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеПоля.РуководительОрганизации</dataPath>
+			<field>РуководительОрганизации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеПоля.ТелефоныКонтрагента</dataPath>
+			<field>ТелефоныКонтрагента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеПоля.ТелефоныОрганизации</dataPath>
+			<field>ТелефоныОрганизации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеПоля.ФактическийАдресОрганизации</dataPath>
+			<field>ФактическийАдресОрганизации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеПоля.ЮридическийАдресКонтрагента</dataPath>
+			<field>ЮридическийАдресКонтрагента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеПоля.ЮридическийАдресОрганизации</dataPath>
+			<field>ЮридическийАдресОрганизации</field>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>Основные</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Часто используемые</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ЗаключениеДоговораАренды_ДоговорКонтрагента_Номер</dataPath>
+			<field>НомерДоговора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер договора контрагента</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.РуководительКонтрагента</dataPath>
+			<field>ФИОРуководителяАрендатора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Арендатор: ФИО руководителя</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ОбеспечительныйПлатежНДС</dataPath>
+			<field>НДСЦифрамиОбеспПлатеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обеспечительный платеж: ндс</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ФактическийАдресКонтрагента</dataPath>
+			<field>ФактическийАдресАрендатора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Арендатор: Фактический адрес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ЮридическийАдресОрганизации</dataPath>
+			<field>ЮридическийАдресАрендодателя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Арендодатель: Юридический адрес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ПеременнаяАренднаяПлатаСтоимость</dataPath>
+			<field>СтоимостьЦифрамиПеременная</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переменная арендная плата: стоимость</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ОбеспечительныйПлатежСтоимость</dataPath>
+			<field>СтоимостьЦифрамиОбеспПлатеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обеспечительный платеж: стоимость</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ЗаключениеДоговораАренды_ДоговорКонтрагента_Дата</dataPath>
+			<field>ДатаДоговора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата договора контрагента</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.[ДатаДоговора(Прописью)]</dataPath>
+			<field>ДатаДоговораПрописью</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата договора(прописью)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.[ПеременнаяАренднаяПлатаСтоимость(Прописью)]</dataPath>
+			<field>СтоимостьПрописьюПеременная</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переменная арендная плата: стоимость(прописью)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ЗаключениеДоговораАренды_Организация_НаименованиеПолное</dataPath>
+			<field>ОрганизацияПолноеНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация: полное наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.РуководительОрганизации</dataPath>
+			<field>ФИОРуководителяАрендодателя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Арендодатель: ФИО руководителя</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.[ФиксированнаяАрендаСтоимость(Прописью)]</dataPath>
+			<field>СтоимостьПрописьюФиксПлатеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ФиксированнаяАренда: стоимость(прописью)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ФиксированнаяАрендаУслуга</dataPath>
+			<field>УслугаФиксированная</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фиксированная аренда: услуга</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.[ОбеспечительныйПлатежНДС(Прописью)]</dataPath>
+			<field>НДСПрописьюОбеспПлатеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обеспечительный платеж: ндс(прописью)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ЗаключениеДоговораАренды_ИК_Наименование</dataPath>
+			<field>НаименованиеИК</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование имущественного комплекса</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ФактическийАдресОрганизации</dataPath>
+			<field>ФактическийАдресАрендодателя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Арендодатель: фактический адрес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ЮридическийАдресКонтрагента</dataPath>
+			<field>ЮридическийАдресАрендатора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Арендатор: юридический адрес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ФиксированнаяАрендаСтоимость</dataPath>
+			<field>СтоимостьЦифрамиФиксПлатеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фиксированная аренда: стоимость</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ДолжностьРуководителяКонтрагента</dataPath>
+			<field>ДолжностьРуководителяАрендатора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Арендатор: должность руководителя</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.[ОбеспечительныйПлатежСтоимость(Прописью)]</dataPath>
+			<field>СтоимостьПрописьюОбеспПлатеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обеспечительный платеж: стоимость(прописью)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ОбеспечительныйПлатежУслуга</dataPath>
+			<field>ОбеспечительныйПлатеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обеспечительный платеж: услуга</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ДолжностьРуководителяОрганизации</dataPath>
+			<field>НаименованиеДолжностиАрендодателя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Арендодатель: должность руководителя</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ПеременнаяАренднаяПлатаУслуга</dataPath>
+			<field>УслугаПеременная</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переменная арендная плата: услуга</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ЗаключениеДоговораАренды_Контрагент_НаименованиеПолное</dataPath>
+			<field>ПолноеНаименованиеАрендатора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полное наименование арендатора</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основные.ГенеральныйДиректорПолностьюВРодПадеже</dataPath>
+			<field>ГенеральныйДиректорПолностьюВРодПадеже</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Генеральный директор полностью в род падеже</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЗНАЧЕНИЕ(Документ.АР17_ЗаключениеДоговораАренды.ПустаяСсылка) КАК ЗаключениеДоговораАренды,
+	"" КАК СписокОбъектовАрендыЧерезЗапятую,
+	"" КАК ЮридическийАдресОрганизации,
+	"" КАК ФактическийАдресОрганизации,
+	"" КАК ТелефоныОрганизации,
+	"" КАК ОбщаяПлощадь,
+	"" КАК ТелефоныКонтрагента,
+	"" КАК ЮридическийАдресКонтрагента,
+	"" КАК ОбщаяСуммаПостояннойЧасти,
+	"" КАК РуководительОрганизации,
+	"" КАК НомерДоговора,
+	"" КАК ОрганизацияПолноеНаименование,
+	"" КАК НаименованиеДолжностиАрендодателя,
+	"" КАК ФИОРуководителяАрендодателя,
+	"" КАК ФактическийАдресАрендодателя,
+	"" КАК ЮридическийАдресАрендодателя,
+	"" КАК НаименованиеИК,
+	"" КАК ДатаДоговораПрописью,
+	"" КАК ДатаДоговора,
+	"" КАК УслугаФиксированная,
+	"" КАК УслугаПеременная,
+	"" КАК ОбеспечительныйПлатеж,
+	"" КАК СтоимостьЦифрамиФиксПлатеж,
+	"" КАК СтоимостьПрописьюФиксПлатеж,
+	"" КАК СтоимостьЦифрамиПеременная,
+	"" КАК СтоимостьПрописьюПеременная,
+	"" КАК СтоимостьЦифрамиОбеспПлатеж,
+	"" КАК СтоимостьПрописьюОбеспПлатеж,
+	"" КАК НДСЦифрамиОбеспПлатеж,
+	"" КАК НДСПрописьюОбеспПлатеж,
+	"" КАК ДолжностьРуководителяАрендатора,
+	"" КАК ФИОРуководителяАрендатора,
+	"" КАК ФактическийАдресАрендатора,
+	"" КАК ЮридическийАдресАрендатора,
+	"" КАК ПолноеНаименованиеАрендатора,
+	"" КАК ГенеральныйДиректорПолностьюВРодПадеже,
+	ЗаключениеДоговораАренды.ПостояннаяЧастьАренднойПлаты.(
+		Ссылка,
+		НомерСтроки,
+		ОбъектАренды,
+		Услуга,
+		Количество,
+		СпособНачисления,
+		Ставка,
+		ДатаНачалаСрокаАренды,
+		ДатаОкончанияСрокаАренды,
+		"" КАК Сумма
+	) КАК ПостояннаяЧастьАренднойПлаты,
+	ЗаключениеДоговораАренды.ПеременнаяЧастьАренднойПлаты.(
+		Ссылка,
+		НомерСтроки,
+		ОбъектАренды,
+		Услуга,
+		Количество,
+		ЕдиницаИзмерения,
+		СпособНачисления,
+		Ставка,
+		ДатаНачалаСрокаАренды,
+		ДатаОкончанияСрокаАренды,
+		Счетчик,
+		КоэффициентОтнесенияСчетчика
+	)
+ИЗ
+	Документ.АР17_ЗаключениеДоговораАренды КАК ЗаключениеДоговораАренды</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
+	</settingsVariant>
+</DataCompositionSchema>

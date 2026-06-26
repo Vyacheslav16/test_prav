@@ -1,0 +1,979 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ПодменюЗаполнить" id="240">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Заполнить</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Подменю заполнить</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ПодменюЗаполнитьРасширеннаяПодсказка" id="252"/>
+				<ChildItems>
+					<Button name="КнопкаЗаполнить" id="241">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьТекущимиДанными</CommandName>
+						<ExtendedTooltip name="КнопкаЗаполнитьРасширеннаяПодсказка" id="253"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНомерДата" id="124">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер/дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>номер и дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНомерДатаРасширеннаяПодсказка" id="254"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="255"/>
+				</InputField>
+				<InputField name="Дата" id="3">
+					<DataPath>Объект.Date</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>от</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="256"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="125">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="257"/>
+			<ChildItems>
+				<Page name="ГруппаОсновная" id="126">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основная</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="258"/>
+					<ChildItems>
+						<InputField name="ДокументОснование" id="194">
+							<DataPath>Объект.ДокументОснование</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основание</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="195"/>
+							<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="259"/>
+							<Events>
+								<Event name="OnChange">ДокументОснованиеПриИзменении</Event>
+								<Event name="StartChoice">ДокументОснованиеНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="Организация" id="5">
+							<DataPath>Объект.Организация</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="260"/>
+						</InputField>
+						<InputField name="Контрагент" id="7">
+							<DataPath>Объект.Контрагент</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="КонтрагентКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="261"/>
+							<Events>
+								<Event name="OnChange">КонтрагентПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Статус" id="350">
+							<DataPath>Объект.Статус</DataPath>
+							<ContextMenu name="СтатусКонтекстноеМеню" id="351"/>
+							<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="352"/>
+						</InputField>
+						<UsualGroup name="ГруппаУсловияДоговора" id="127">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Условия договора</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа условия договора</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>WeakSeparation</Representation>
+							<ExtendedTooltip name="ГруппаУсловияДоговораРасширеннаяПодсказка" id="262"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаДоговор" id="130">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа договор</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа договор</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДоговорРасширеннаяПодсказка" id="263"/>
+									<ChildItems>
+										<InputField name="ДоговорКонтрагента" id="9">
+											<DataPath>Объект.ДоговорКонтрагента</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ДоговорКонтрагентаКонтекстноеМеню" id="10"/>
+											<ExtendedTooltip name="ДоговорКонтрагентаРасширеннаяПодсказка" id="264"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПериодАренды" id="128">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа период аренды</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа период аренды</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПериодАрендыРасширеннаяПодсказка" id="265"/>
+									<ChildItems>
+										<InputField name="ДатаОкончанияДоговора" id="13">
+											<DataPath>Объект.ДатаОкончанияДоговора</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Фактическое окончание</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ДатаОкончанияДоговораКонтекстноеМеню" id="14"/>
+											<ExtendedTooltip name="ДатаОкончанияДоговораРасширеннаяПодсказка" id="266"/>
+											<Events>
+												<Event name="OnChange">ДатаОкончанияДоговораПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаУчитыватьДепозит" id="136">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа учитывать депозит</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа учитывать депозит</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУчитыватьДепозитРасширеннаяПодсказка" id="267"/>
+									<ChildItems>
+										<InputField name="СуммаЗалога" id="43">
+											<DataPath>Объект.СуммаЗалога</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<Width>11</Width>
+											<ContextMenu name="СуммаЗалогаКонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="СуммаЗалогаРасширеннаяПодсказка" id="268"/>
+										</InputField>
+										<Button name="РассчитатьДепозит" id="137">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.РассчитатьДепозит</CommandName>
+											<ExtendedTooltip name="РассчитатьДепозитРасширеннаяПодсказка" id="269"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ОдностороннееРасторжение" id="242">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Одностороннее расторжение</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Одностороннее расторжение</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>WeakSeparation</Representation>
+							<ExtendedTooltip name="ОдностороннееРасторжениеРасширеннаяПодсказка" id="270"/>
+							<ChildItems>
+								<InputField name="СоСтороныАрендодателя" id="243">
+									<DataPath>Объект.СоСтороныАрендодателя</DataPath>
+									<ContextMenu name="СоСтороныАрендодателяКонтекстноеМеню" id="244"/>
+									<ExtendedTooltip name="СоСтороныАрендодателяРасширеннаяПодсказка" id="271"/>
+								</InputField>
+								<InputField name="СоСтороныАрендатора" id="245">
+									<DataPath>Объект.СоСтороныАрендатора</DataPath>
+									<ContextMenu name="СоСтороныАрендатораКонтекстноеМеню" id="246"/>
+									<ExtendedTooltip name="СоСтороныАрендатораРасширеннаяПодсказка" id="272"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ОбъектыАренды" id="325">
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ОбъектыАренды</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОбъектыАрендыКонтекстноеМеню" id="326"/>
+							<AutoCommandBar name="ОбъектыАрендыКоманднаяПанель" id="327"/>
+							<ExtendedTooltip name="ОбъектыАрендыРасширеннаяПодсказка" id="328"/>
+							<SearchStringAddition name="ОбъектыАрендыСтрокаПоиска" id="329">
+								<AdditionSource>
+									<Item>ОбъектыАренды</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбъектыАрендыСтрокаПоискаКонтекстноеМеню" id="330"/>
+								<ExtendedTooltip name="ОбъектыАрендыСтрокаПоискаРасширеннаяПодсказка" id="331"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОбъектыАрендыСостояниеПросмотра" id="332">
+								<AdditionSource>
+									<Item>ОбъектыАренды</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбъектыАрендыСостояниеПросмотраКонтекстноеМеню" id="333"/>
+								<ExtendedTooltip name="ОбъектыАрендыСостояниеПросмотраРасширеннаяПодсказка" id="334"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОбъектыАрендыУправлениеПоиском" id="335">
+								<AdditionSource>
+									<Item>ОбъектыАренды</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбъектыАрендыУправлениеПоискомКонтекстноеМеню" id="336"/>
+								<ExtendedTooltip name="ОбъектыАрендыУправлениеПоискомРасширеннаяПодсказка" id="337"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОбъектыАрендыНомерСтроки" id="338">
+									<DataPath>Объект.ОбъектыАренды.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ОбъектыАрендыНомерСтрокиКонтекстноеМеню" id="339"/>
+									<ExtendedTooltip name="ОбъектыАрендыНомерСтрокиРасширеннаяПодсказка" id="340"/>
+								</LabelField>
+								<InputField name="ОбъектыАрендыОбъектАренды" id="341">
+									<DataPath>Объект.ОбъектыАренды.ОбъектАренды</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ОбъектыАрендыОбъектАрендыКонтекстноеМеню" id="342"/>
+									<ExtendedTooltip name="ОбъектыАрендыОбъектАрендыРасширеннаяПодсказка" id="343"/>
+								</InputField>
+								<InputField name="ОбъектыАрендыПлощадь" id="344">
+									<DataPath>Объект.ОбъектыАренды.Площадь</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ОбъектыАрендыПлощадьКонтекстноеМеню" id="345"/>
+									<ExtendedTooltip name="ОбъектыАрендыПлощадьРасширеннаяПодсказка" id="346"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="ГруппаПереданВозвращен" id="247">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа передан возвращен</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа передан возвращен</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПереданВозвращенРасширеннаяПодсказка" id="273"/>
+							<ChildItems>
+								<InputField name="Передан" id="248">
+									<DataPath>Объект.Передан</DataPath>
+									<ContextMenu name="ПереданКонтекстноеМеню" id="249"/>
+									<ExtendedTooltip name="ПереданРасширеннаяПодсказка" id="274"/>
+								</InputField>
+								<InputField name="Возвращен" id="250">
+									<DataPath>Объект.Возвращен</DataPath>
+									<ContextMenu name="ВозвращенКонтекстноеМеню" id="251"/>
+									<ExtendedTooltip name="ВозвращенРасширеннаяПодсказка" id="275"/>
+								</InputField>
+								<InputField name="ШК" id="347">
+									<DataPath>ШК</DataPath>
+									<ContextMenu name="ШККонтекстноеМеню" id="348"/>
+									<ExtendedTooltip name="ШКРасширеннаяПодсказка" id="349"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПостояннаяЧастьАренднойПлаты" id="78">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Постоянная часть платы</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаПостояннаяЧастьАренднойПлатыРасширеннаяПодсказка" id="276"/>
+					<ChildItems>
+						<Table name="ПостояннаяЧастьАренднойПлаты" id="151">
+							<Representation>List</Representation>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<Footer>true</Footer>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ПостояннаяЧастьАренднойПлаты</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПостояннаяЧастьАренднойПлатыКонтекстноеМеню" id="152"/>
+							<AutoCommandBar name="ПостояннаяЧастьАренднойПлатыКоманднаяПанель" id="153"/>
+							<ExtendedTooltip name="ПостояннаяЧастьАренднойПлатыРасширеннаяПодсказка" id="277"/>
+							<SearchStringAddition name="ПостояннаяЧастьАренднойПлатыСтрокаПоиска" id="278">
+								<AdditionSource>
+									<Item>ПостояннаяЧастьАренднойПлаты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПостояннаяЧастьАренднойПлатыСтрокаПоискаКонтекстноеМеню" id="279"/>
+								<ExtendedTooltip name="ПостояннаяЧастьАренднойПлатыСтрокаПоискаРасширеннаяПодсказка" id="280"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПостояннаяЧастьАренднойПлатыСостояниеПросмотра" id="281">
+								<AdditionSource>
+									<Item>ПостояннаяЧастьАренднойПлаты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПостояннаяЧастьАренднойПлатыСостояниеПросмотраКонтекстноеМеню" id="282"/>
+								<ExtendedTooltip name="ПостояннаяЧастьАренднойПлатыСостояниеПросмотраРасширеннаяПодсказка" id="283"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПостояннаяЧастьАренднойПлатыУправлениеПоиском" id="284">
+								<AdditionSource>
+									<Item>ПостояннаяЧастьАренднойПлаты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПостояннаяЧастьАренднойПлатыУправлениеПоискомКонтекстноеМеню" id="285"/>
+								<ExtendedTooltip name="ПостояннаяЧастьАренднойПлатыУправлениеПоискомРасширеннаяПодсказка" id="286"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnStartEdit">ПостояннаяЧастьАренднойПлатыПриНачалеРедактирования</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ПостояннаяЧастьАренднойПлатыНомерСтроки" id="200">
+									<DataPath>Объект.ПостояннаяЧастьАренднойПлаты.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПостояннаяЧастьАренднойПлатыНомерСтрокиКонтекстноеМеню" id="201"/>
+									<ExtendedTooltip name="ПостояннаяЧастьАренднойПлатыНомерСтрокиРасширеннаяПодсказка" id="287"/>
+								</LabelField>
+								<InputField name="ПостояннаяЧастьАренднойПлатыУслуга" id="202">
+									<DataPath>Объект.ПостояннаяЧастьАренднойПлаты.Услуга</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПостояннаяЧастьАренднойПлатыУслугаКонтекстноеМеню" id="203"/>
+									<ExtendedTooltip name="ПостояннаяЧастьАренднойПлатыУслугаРасширеннаяПодсказка" id="288"/>
+									<Events>
+										<Event name="OnChange">ПостояннаяЧастьАренднойПлатыУслугаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПостояннаяЧастьАренднойПлатыОбъектАренды" id="204">
+									<DataPath>Объект.ПостояннаяЧастьАренднойПлаты.ОбъектАренды</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПостояннаяЧастьАренднойПлатыОбъектАрендыКонтекстноеМеню" id="205"/>
+									<ExtendedTooltip name="ПостояннаяЧастьАренднойПлатыОбъектАрендыРасширеннаяПодсказка" id="289"/>
+									<Events>
+										<Event name="ChoiceProcessing">ПостояннаяЧастьАренднойПлатыОбъектАрендыОбработкаВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПостояннаяЧастьАренднойПлатыКоличество" id="206">
+									<DataPath>Объект.ПостояннаяЧастьАренднойПлаты.Количество</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Площадь</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.ПостояннаяЧастьАренднойПлаты.TotalКоличество</FooterDataPath>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПостояннаяЧастьАренднойПлатыКоличествоКонтекстноеМеню" id="207"/>
+									<ExtendedTooltip name="ПостояннаяЧастьАренднойПлатыКоличествоРасширеннаяПодсказка" id="290"/>
+								</InputField>
+								<InputField name="ПостояннаяЧастьАренднойПлатыСпособНачисления" id="208">
+									<DataPath>Объект.ПостояннаяЧастьАренднойПлаты.СпособНачисления</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПостояннаяЧастьАренднойПлатыСпособНачисленияКонтекстноеМеню" id="209"/>
+									<ExtendedTooltip name="ПостояннаяЧастьАренднойПлатыСпособНачисленияРасширеннаяПодсказка" id="291"/>
+								</InputField>
+								<InputField name="ПостояннаяЧастьАренднойПлатыСтавка" id="210">
+									<DataPath>Объект.ПостояннаяЧастьАренднойПлаты.Ставка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПостояннаяЧастьАренднойПлатыСтавкаКонтекстноеМеню" id="211"/>
+									<ExtendedTooltip name="ПостояннаяЧастьАренднойПлатыСтавкаРасширеннаяПодсказка" id="292"/>
+								</InputField>
+								<InputField name="ПостояннаяЧастьАренднойПлатыДатаНачалаСрокаАренды" id="214">
+									<DataPath>Объект.ПостояннаяЧастьАренднойПлаты.ДатаНачалаСрокаАренды</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата начала</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПостояннаяЧастьАренднойПлатыДатаНачалаСрокаАрендыКонтекстноеМеню" id="215"/>
+									<ExtendedTooltip name="ПостояннаяЧастьАренднойПлатыДатаНачалаСрокаАрендыРасширеннаяПодсказка" id="293"/>
+								</InputField>
+								<InputField name="ПостояннаяЧастьАренднойПлатыДатаОкончанияСрокаАренды" id="216">
+									<DataPath>Объект.ПостояннаяЧастьАренднойПлаты.ДатаОкончанияСрокаАренды</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата окончания</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПостояннаяЧастьАренднойПлатыДатаОкончанияСрокаАрендыКонтекстноеМеню" id="217"/>
+									<ExtendedTooltip name="ПостояннаяЧастьАренднойПлатыДатаОкончанияСрокаАрендыРасширеннаяПодсказка" id="294"/>
+									<Events>
+										<Event name="OnChange">ПостояннаяЧастьАренднойПлатыДатаОкончанияСрокаАрендыПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПеременнаяЧастьАренднойПлаты" id="98">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Переменная часть платы</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаПеременнаяЧастьАренднойПлатыРасширеннаяПодсказка" id="295"/>
+					<ChildItems>
+						<Table name="ПеременнаяЧастьАренднойПлаты" id="99">
+							<Representation>List</Representation>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ПеременнаяЧастьАренднойПлаты</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПеременнаяЧастьАренднойПлатыКонтекстноеМеню" id="100"/>
+							<AutoCommandBar name="ПеременнаяЧастьАренднойПлатыКоманднаяПанель" id="101"/>
+							<ExtendedTooltip name="ПеременнаяЧастьАренднойПлатыРасширеннаяПодсказка" id="296"/>
+							<SearchStringAddition name="ПеременнаяЧастьАренднойПлатыСтрокаПоиска" id="297">
+								<AdditionSource>
+									<Item>ПеременнаяЧастьАренднойПлаты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПеременнаяЧастьАренднойПлатыСтрокаПоискаКонтекстноеМеню" id="298"/>
+								<ExtendedTooltip name="ПеременнаяЧастьАренднойПлатыСтрокаПоискаРасширеннаяПодсказка" id="299"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПеременнаяЧастьАренднойПлатыСостояниеПросмотра" id="300">
+								<AdditionSource>
+									<Item>ПеременнаяЧастьАренднойПлаты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПеременнаяЧастьАренднойПлатыСостояниеПросмотраКонтекстноеМеню" id="301"/>
+								<ExtendedTooltip name="ПеременнаяЧастьАренднойПлатыСостояниеПросмотраРасширеннаяПодсказка" id="302"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПеременнаяЧастьАренднойПлатыУправлениеПоиском" id="303">
+								<AdditionSource>
+									<Item>ПеременнаяЧастьАренднойПлаты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПеременнаяЧастьАренднойПлатыУправлениеПоискомКонтекстноеМеню" id="304"/>
+								<ExtendedTooltip name="ПеременнаяЧастьАренднойПлатыУправлениеПоискомРасширеннаяПодсказка" id="305"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnStartEdit">ПеременнаяЧастьАренднойПлатыПриНачалеРедактирования</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ПеременнаяЧастьАренднойПлатыНомерСтроки" id="218">
+									<DataPath>Объект.ПеременнаяЧастьАренднойПлаты.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПеременнаяЧастьАренднойПлатыНомерСтрокиКонтекстноеМеню" id="219"/>
+									<ExtendedTooltip name="ПеременнаяЧастьАренднойПлатыНомерСтрокиРасширеннаяПодсказка" id="306"/>
+								</LabelField>
+								<InputField name="ПеременнаяЧастьАренднойПлатыУслуга" id="220">
+									<DataPath>Объект.ПеременнаяЧастьАренднойПлаты.Услуга</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПеременнаяЧастьАренднойПлатыУслугаКонтекстноеМеню" id="221"/>
+									<ExtendedTooltip name="ПеременнаяЧастьАренднойПлатыУслугаРасширеннаяПодсказка" id="307"/>
+									<Events>
+										<Event name="OnChange">ПеременнаяЧастьАренднойПлатыУслугаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПеременнаяЧастьАренднойПлатыОбъектАренды" id="222">
+									<DataPath>Объект.ПеременнаяЧастьАренднойПлаты.ОбъектАренды</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПеременнаяЧастьАренднойПлатыОбъектАрендыКонтекстноеМеню" id="223"/>
+									<ExtendedTooltip name="ПеременнаяЧастьАренднойПлатыОбъектАрендыРасширеннаяПодсказка" id="308"/>
+									<Events>
+										<Event name="ChoiceProcessing">ПеременнаяЧастьАренднойПлатыОбъектАрендыОбработкаВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПеременнаяЧастьАренднойПлатыКоличество" id="224">
+									<DataPath>Объект.ПеременнаяЧастьАренднойПлаты.Количество</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Площадь</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПеременнаяЧастьАренднойПлатыКоличествоКонтекстноеМеню" id="225"/>
+									<ExtendedTooltip name="ПеременнаяЧастьАренднойПлатыКоличествоРасширеннаяПодсказка" id="309"/>
+								</InputField>
+								<InputField name="ПеременнаяЧастьАренднойПлатыЕдиницаИзмерения" id="226">
+									<DataPath>Объект.ПеременнаяЧастьАренднойПлаты.ЕдиницаИзмерения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ед.изм.</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>10</Width>
+									<ContextMenu name="ПеременнаяЧастьАренднойПлатыЕдиницаИзмеренияКонтекстноеМеню" id="227"/>
+									<ExtendedTooltip name="ПеременнаяЧастьАренднойПлатыЕдиницаИзмеренияРасширеннаяПодсказка" id="310"/>
+								</InputField>
+								<InputField name="ПеременнаяЧастьАренднойПлатыСпособНачисления" id="228">
+									<DataPath>Объект.ПеременнаяЧастьАренднойПлаты.СпособНачисления</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПеременнаяЧастьАренднойПлатыСпособНачисленияКонтекстноеМеню" id="229"/>
+									<ExtendedTooltip name="ПеременнаяЧастьАренднойПлатыСпособНачисленияРасширеннаяПодсказка" id="311"/>
+								</InputField>
+								<InputField name="ПеременнаяЧастьАренднойПлатыСтавка" id="230">
+									<DataPath>Объект.ПеременнаяЧастьАренднойПлаты.Ставка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПеременнаяЧастьАренднойПлатыСтавкаКонтекстноеМеню" id="231"/>
+									<ExtendedTooltip name="ПеременнаяЧастьАренднойПлатыСтавкаРасширеннаяПодсказка" id="312"/>
+								</InputField>
+								<InputField name="ПеременнаяЧастьАренднойПлатыСчетчик" id="232">
+									<DataPath>Объект.ПеременнаяЧастьАренднойПлаты.Счетчик</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПеременнаяЧастьАренднойПлатыСчетчикКонтекстноеМеню" id="233"/>
+									<ExtendedTooltip name="ПеременнаяЧастьАренднойПлатыСчетчикРасширеннаяПодсказка" id="313"/>
+								</InputField>
+								<InputField name="ПеременнаяЧастьАренднойПлатыКоэффициентОтнесенияСчетчика" id="234">
+									<DataPath>Объект.ПеременнаяЧастьАренднойПлаты.КоэффициентОтнесенияСчетчика</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Коэфф.сч.</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПеременнаяЧастьАренднойПлатыКоэффициентОтнесенияСчетчикаКонтекстноеМеню" id="235"/>
+									<ExtendedTooltip name="ПеременнаяЧастьАренднойПлатыКоэффициентОтнесенияСчетчикаРасширеннаяПодсказка" id="314"/>
+								</InputField>
+								<InputField name="ПеременнаяЧастьАренднойПлатыДатаНачалаСрокаАренды" id="236">
+									<DataPath>Объект.ПеременнаяЧастьАренднойПлаты.ДатаНачалаСрокаАренды</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата начала</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПеременнаяЧастьАренднойПлатыДатаНачалаСрокаАрендыКонтекстноеМеню" id="237"/>
+									<ExtendedTooltip name="ПеременнаяЧастьАренднойПлатыДатаНачалаСрокаАрендыРасширеннаяПодсказка" id="315"/>
+								</InputField>
+								<InputField name="ПеременнаяЧастьАренднойПлатыДатаОкончанияСрокаАренды" id="238">
+									<DataPath>Объект.ПеременнаяЧастьАренднойПлаты.ДатаОкончанияСрокаАренды</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата окончания</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПеременнаяЧастьАренднойПлатыДатаОкончанияСрокаАрендыКонтекстноеМеню" id="239"/>
+									<ExtendedTooltip name="ПеременнаяЧастьАренднойПлатыДатаОкончанияСрокаАрендыРасширеннаяПодсказка" id="316"/>
+									<Events>
+										<Event name="OnChange">ПеременнаяЧастьАренднойПлатыДатаОкончанияСрокаАрендыПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПриложения" id="135">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приложения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа приложения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаПриложенияРасширеннаяПодсказка" id="317"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаАкт" id="145">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа акт</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа акт</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАктРасширеннаяПодсказка" id="318"/>
+							<ChildItems>
+								<InputField name="НомерАкта" id="19">
+									<DataPath>Объект.НомерАкта</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Акт №</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="НомерАктаКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="НомерАктаРасширеннаяПодсказка" id="319"/>
+								</InputField>
+								<InputField name="ДатаАкта" id="21">
+									<DataPath>Объект.ДатаАкта</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>от</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДатаАктаКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="ДатаАктаРасширеннаяПодсказка" id="320"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСоглашение" id="146">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа соглашение</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа соглашение</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСоглашениеРасширеннаяПодсказка" id="321"/>
+							<ChildItems>
+								<InputField name="НомерСоглашения" id="196">
+									<DataPath>Объект.НомерСоглашения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Соглашение №</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НомерСоглашенияКонтекстноеМеню" id="197"/>
+									<ExtendedTooltip name="НомерСоглашенияРасширеннаяПодсказка" id="322"/>
+								</InputField>
+								<InputField name="ДатаСоглашения" id="198">
+									<DataPath>Объект.ДатаСоглашения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>от</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДатаСоглашенияКонтекстноеМеню" id="199"/>
+									<ExtendedTooltip name="ДатаСоглашенияРасширеннаяПодсказка" id="323"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Ответственный" id="353">
+			<DataPath>Объект.Ответственный</DataPath>
+			<ContextMenu name="ОтветственныйКонтекстноеМеню" id="354"/>
+			<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="355"/>
+		</InputField>
+		<InputField name="Комментарий" id="45">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="46"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="324"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.АР17_РасторжениеДоговораАренды</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="НадписьГрафикСтавок" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надпись график ставок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьГрафикСтавок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать график ставок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбщаяСуммаПостояннойЧасти" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая сумма постоянной части</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШК" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ШтрихКод</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>13</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="РассчитатьДепозит" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать депозит</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РассчитатьДепозит</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаполнитьТекущимиДанными" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущими данными по аренде</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить текущими данными</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьТекущимиДанными</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>CommonCommand.АР_ПечатьПоШаблону</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.Печать</CommandGroup>
+			</Item>
+			<Item>
+				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.Печать</CommandGroup>
+				<Index>3</Index>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.Печать</CommandGroup>
+				<Index>1</Index>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.Печать</CommandGroup>
+				<Index>2</Index>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

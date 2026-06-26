@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="77a21080-e29e-4bf3-ab8b-cf5fc8093af5">
+		<Name>застил</Name>
+		<Code>000000001</Code>
+		<Description>Застил</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="df061ec8-300f-428f-977f-1eeaf75eabe2">
+		<Name>КомиссииСистемБронированияRAMADA</Name>
+		<Code>000000007</Code>
+		<Description>Комиссии систем бронирования RAMADA</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c26b89c9-9948-4a07-8611-1adf0153dafe">
+		<Name>КомиссииСистемБронированияVALO</Name>
+		<Code>000000006</Code>
+		<Description>Комиссии систем бронирования VALO</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="553ab842-ac63-4660-8717-e707fdb76651">
+		<Name>ОсвежающаяУборка</Name>
+		<Code>000000003</Code>
+		<Description>освежающая уборка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4c4925d4-0b11-4c77-922d-0015e0a82781">
+		<Name>перестил</Name>
+		<Code>000000002</Code>
+		<Description>перестил(стирка, пятновыводка, перестил)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d9901f38-c224-43d5-a667-1833c59a586e">
+		<Name>РасходныеМатериалыИУслуги</Name>
+		<Code>000000005</Code>
+		<Description>Расходные материалы и услуги</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6625cf3b-d0e9-4c91-8371-ff070624e578">
+		<Name>УборкаКраткосрок</Name>
+		<Code>000000004</Code>
+		<Description>Уборка краткосрок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="9b38b2fa-7455-464e-9069-f5d28ed94d29">
+		<Name>АБК</Name>
+		<Code>000000013</Code>
+		<Description>Административно-бытовой комплекс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fad4f3e2-d285-4ba4-867a-672ad38f078a">
+		<Name>БП</Name>
+		<Code>000000010</Code>
+		<Description>Бизнес парк</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="233c1d1b-cc32-4965-a49d-96e13d2331fc">
+		<Name>БЦ</Name>
+		<Code>000000011</Code>
+		<Description>Бизнес-центр</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2539cbd5-4e6f-40cf-9fec-b07dcc952e7a">
+		<Name>ДТЦ</Name>
+		<Code>000000007</Code>
+		<Description>Детский торговый центр</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="db9449f7-a97f-4f7b-b3cf-2041806ee979">
+		<Name>ИК</Name>
+		<Code>000000018</Code>
+		<Description>Индустриальный комплекс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="036fcf7f-2a48-4a63-9e2b-c633f3174604">
+		<Name>ИП</Name>
+		<Code>000000017</Code>
+		<Description>Индустриальный парк</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="143c33eb-49a2-414b-b7bb-58788753f1e6">
+		<Name>ЛК</Name>
+		<Code>000000015</Code>
+		<Description>Логистический комплекс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0e2788a0-7fda-4f9e-8eba-03e59cd1e66a">
+		<Name>МФК</Name>
+		<Code>000000001</Code>
+		<Description>Многофункциональный комплекс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f33f69cf-a39c-4f59-8fb9-e89e5d7a757c">
+		<Name>МТОЦ</Name>
+		<Code>000000003</Code>
+		<Description>Многофункциональный торгово-офисный центр</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2eaaab27-5f1d-4168-a901-042ed88c1fda">
+		<Name>МФЦ</Name>
+		<Code>000000002</Code>
+		<Description>Многофункциональный центр</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="47a877fe-d015-4ec2-9b91-b498a3eb4bee">
+		<Name>ОСК</Name>
+		<Code>000000014</Code>
+		<Description>Офисно-складской комплекс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0f23cb05-6a97-4427-b0ff-24f0614b2d0e">
+		<Name>ОЦ</Name>
+		<Code>000000012</Code>
+		<Description>Офисный центр</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2ef47859-b9bf-44c9-996c-46b4ce676bd7">
+		<Name>ПЗ</Name>
+		<Code>000000019</Code>
+		<Description>Промышленное здание</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1e1e5df3-a763-4b65-b877-c6a0e7dadde7">
+		<Name>СК</Name>
+		<Code>000000016</Code>
+		<Description>Складской комплекс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6811342c-8284-4c05-8495-9c6e6eafc169">
+		<Name>СТЦ</Name>
+		<Code>000000006</Code>
+		<Description>Специализированный торговоый центр</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f647e8b8-a410-4d3e-8239-d02152519d56">
+		<Name>ТОК</Name>
+		<Code>000000009</Code>
+		<Description>Торгово-офисный комплекс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0a20e22b-33b5-4cdb-b291-361a2f41a4ce">
+		<Name>ТОЦ</Name>
+		<Code>000000008</Code>
+		<Description>Торгово-офисный центр</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a1293c15-5293-44eb-bbec-7a74fe1d9258">
+		<Name>ТРК</Name>
+		<Code>000000005</Code>
+		<Description>Торгово-развлекательный комплекс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c6ee91cb-c67f-4772-947e-d728c69d471d">
+		<Name>ТРЦ</Name>
+		<Code>000000004</Code>
+		<Description>Торгово-развлекательный центр</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

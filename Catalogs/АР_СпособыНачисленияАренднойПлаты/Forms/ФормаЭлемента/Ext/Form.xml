@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="НаименованиеКод" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НаименованиеКодРасширеннаяПодсказка" id="15"/>
+			<ChildItems>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ChoiceListButton>true</ChoiceListButton>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="16"/>
+					<Events>
+						<Event name="StartListChoice">НаименованиеНачалоВыбораИзСписка</Event>
+					</Events>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="17"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ВалютаЕдИзм" id="14">
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта ед изм</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта ед изм</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ВалютаЕдИзмРасширеннаяПодсказка" id="18"/>
+			<ChildItems>
+				<InputField name="Валюта" id="5">
+					<DataPath>Объект.Валюта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ВалютаКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ЕдиницаИзмерения" id="7">
+					<DataPath>Объект.ЕдиницаИзмерения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ЕдиницаИзмеренияКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ЕдиницаИзмеренияРасширеннаяПодсказка" id="20"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ПериодНачисления" id="9">
+			<DataPath>Объект.ПериодНачисления</DataPath>
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="ПериодНачисленияКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ПериодНачисленияРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<CheckBoxField name="ЗаОбъектВЦелом" id="11">
+			<DataPath>Объект.ЗаОбъектВЦелом</DataPath>
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<TitleLocation>Right</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="ЗаОбъектВЦеломКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ЗаОбъектВЦеломРасширеннаяПодсказка" id="22"/>
+		</CheckBoxField>
+		<InputField name="СпособНачисления" id="23">
+			<DataPath>Объект.СпособНачисления</DataPath>
+			<Visible>false</Visible>
+			<ContextMenu name="СпособНачисленияКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="СпособНачисленияРасширеннаяПодсказка" id="25"/>
+		</InputField>
+		<CheckBoxField name="БезНеполногоМесяца" id="26">
+			<DataPath>Объект.БезНеполногоМесяца</DataPath>
+			<ContextMenu name="БезНеполногоМесяцаКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="БезНеполногоМесяцаРасширеннаяПодсказка" id="28"/>
+		</CheckBoxField>
+		<InputField name="Комментарий" id="29">
+			<DataPath>Объект.Комментарий</DataPath>
+			<Width>80</Width>
+			<Height>20</Height>
+			<VerticalStretch>false</VerticalStretch>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="31"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.АР_СпособыНачисленияАренднойПлаты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
